@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <title>Javascript</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <input type="text" id="nombre">
+        <button id="miboton">Púlsame</button>
+        <script>
+            document.getElementById("miboton").onclick = function(){
+                console.log("Has escrito: "+document.getElementById("nombre").value)
+            }
+        </script>
+    </body>
+</html>
