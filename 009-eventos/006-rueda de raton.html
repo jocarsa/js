@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <title>Javascript</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <input type="text" id="campo">
+        <script>
+            document.getElementById("campo").onfocus = function(){
+                
+                console.log("Has interactuado")
+                return false;
+            }
+            document.getElementById("campo").onblur = function(){
+                
+                console.log("Has interactuado para salir")
+                return false;
+            }
+            document.onmousewheel = function(){
+                console.log("Estas rodando la rueda")
+            }
+        </script>
+    </body>

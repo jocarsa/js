@@ -11,12 +11,22 @@
                     this.nombre;
                     this.edad = 0;
                 }
+                setEdad(nueva_edad){
+                    this.edad = nueva_edad;
+                }
+                getEdad(){
+                    return this.edad
+                }
+                maulla(){
+                    return "El gato está maullando"
+                }
             }
             var Micifu = new Gato();
             var Michino = new Gato();
             console.log(Micifu.edad)
-            Micifu.edad++
-            console.log(Micifu.edad);
+            Micifu.setEdad(1)
+            console.log(Micifu.getEdad());
+            console.log(Micifu.maulla());
         </script>
     </body>
 </html>

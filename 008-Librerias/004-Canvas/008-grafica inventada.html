@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <title>Javascript</title>
+        <meta charset="utf-8">
+        <style>
+            #lienzo{border:1px solid grey;}
+        </style>
+    </head>
+    <body>
+        <canvas id="lienzo" width=512 height=128></canvas>
+        <script>
+            var contexto = document.getElementById("lienzo").getContext("2d");
+            for(var i = 0;i<512;i++){
+                contexto.fillStyle = "rgb("+Math.round(Math.random()*255)+","+Math.round(Math.random()*255)+","+Math.round(Math.random()*255)+")"
+                console.log("barra")
+                contexto.fillRect(i,127,1,0-Math.random()*128)
+            }
+        </script>
+    </body>

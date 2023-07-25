@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <title>Javascript</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <div class="elemento">Hola</div>
+        <div class="elemento">Hola</div>
+        <div class="elemento">Hola</div>
+        <div class="elemento">Hola</div>
+        <script>
+            elemento = document.getElementsByClassName("elemento")
+            console.log(elemento)
+            for(var i = 0;i<elemento.length;i++){
+                elemento[i].style.color = "red"
+            }
+            
+        </script>
+    </body>
