@@ -1,0 +1,33 @@
+En el ejemplo de código proporcionado, tenemos una página HTML que contiene tres divisiones (`<div>`) con identificadores (`id`) específicos y un bloque de código JavaScript que interactúa con una de las divisiones. A continuación, explicaré tanto la parte JavaScript como la parte HTML relacionada con el código JavaScript:
+
+**Parte HTML:**
+
+1. `<div id="cabecera"></div>`: Esta es una división con el identificador (`id`) "cabecera". Representa una sección de la página que se identifica mediante CSS y JavaScript.
+
+2. `<div id="principal"></div>`: Esta es otra división con el identificador "principal". Representa otra sección de la página y se puede identificar mediante CSS y JavaScript.
+
+3. `<div id="piedepagina"></div>`: Esta es la tercera división con el identificador "piedepagina". Representa una sección adicional de la página.
+
+**Parte JavaScript:**
+
+```html
+<script>
+    document.getElementById("cabecera").innerHTML = "Yo soy la cabecera desde JS";
+</script>
+```
+
+Dentro del bloque de código JavaScript, tenemos una línea que utiliza la función `document.getElementById()` para obtener el elemento con el identificador "cabecera" y luego asigna un contenido a su propiedad `innerHTML`.
+
+- `document.getElementById("cabecera")`: Esta parte del código utiliza la función `document.getElementById()` para obtener el elemento del DOM (Documento de Objeto Modelo) que tiene el identificador "cabecera". El método `getElementById()` permite acceder a un elemento específico de la página HTML mediante su identificador único.
+
+- `.innerHTML = "Yo soy la cabecera desde JS";`: Después de obtener el elemento con el identificador "cabecera", se asigna el contenido "Yo soy la cabecera desde JS" a su propiedad `innerHTML`. Esta propiedad se utiliza para establecer o recuperar el contenido HTML dentro del elemento.
+
+Al cargar la página, el bloque de código JavaScript se ejecutará después de que el documento HTML haya sido analizado. El código accede al elemento con el identificador "cabecera" y asigna el texto "Yo soy la cabecera desde JS" como contenido de ese elemento. Como resultado, el texto se mostrará dentro de la división con el identificador "cabecera" en el navegador.
+
+Por ejemplo, si el resultado del código se muestra en el navegador, se verá así:
+
+```html
+Yo soy la cabecera desde JS
+```
+
+Es importante mencionar que, dado que el contenido es establecido dinámicamente por JavaScript, si inspeccionas el código fuente de la página desde el navegador, solo verás la estructura HTML original sin el texto "Yo soy la cabecera desde JS". Este contenido es añadido por el código JavaScript y no se verá directamente en el código fuente. Sin embargo, al inspeccionar los elementos de la página (F12 o clic derecho > Inspeccionar), podrás ver el texto dentro de la división con el identificador "cabecera".

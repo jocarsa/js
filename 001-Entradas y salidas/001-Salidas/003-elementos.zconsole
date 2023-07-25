@@ -1,0 +1,31 @@
+En el ejemplo de código proporcionado, tenemos una página HTML que contiene tres divisiones (`<div>`) con identificadores (`id`) específicos, y un bloque de código JavaScript dentro de la tercera división. A continuación, explicaré tanto la parte JavaScript como la parte HTML relacionada con el código JavaScript:
+
+**Parte HTML:**
+
+1. `<div id="cabecera"></div>`: Esta es una división con el identificador (`id`) "cabecera". Se utiliza para representar una sección de la página que se identifica mediante CSS y JavaScript.
+
+2. `<div id="principal"></div>`: Esta es otra división con el identificador "principal". Representa otra sección de la página y se puede identificar mediante CSS y JavaScript.
+
+3. `<div id="piedepagina">`: Esta es la tercera división con el identificador "piedepagina". Representa una sección adicional de la página, pero en este caso, contiene el bloque de código JavaScript.
+
+**Parte JavaScript:**
+
+```html
+<script>
+    document.writeln("Hola mundo desde Javascript");
+</script>
+```
+
+Dentro de la división con el identificador "piedepagina", tenemos el bloque de código JavaScript. En este caso, la función `document.writeln()` se utiliza para agregar el mensaje "Hola mundo desde Javascript" en el cuerpo del documento HTML.
+
+Cuando el navegador carga esta página HTML, el bloque de código JavaScript se ejecuta en el momento en que se encuentra en el flujo del documento. La función `document.writeln()` agrega el mensaje en la ubicación donde está presente en el código HTML, que en este caso es dentro de la división con el identificador "piedepagina".
+
+Entonces, al cargar la página, el resultado será:
+
+```html
+Hola mundo desde Javascript
+```
+
+El mensaje se mostrará dentro de la división con el identificador "piedepagina" en el navegador, y debido a la altura (`height`) establecida en las divisiones mediante CSS, el contenido se visualizará como una barra de 20px de altura con el fondo con colores semi-transparentes definidos en el estilo CSS.
+
+En resumen, el código HTML contiene tres divisiones con identificadores específicos, y el código JavaScript dentro de una de esas divisiones agrega el mensaje "Hola mundo desde Javascript" en el cuerpo del documento HTML y lo muestra en el navegador.

@@ -1,0 +1,29 @@
+En programación, las entradas y salidas (I/O, Input/Output en inglés) se refieren a la comunicación entre un programa y su entorno externo, como el usuario, otros programas o dispositivos periféricos. Estas interacciones son esenciales para que los programas puedan comunicarse con el mundo exterior y realizar tareas prácticas.
+
+**Entradas (Inputs):**
+
+Las entradas son los datos o información que se proporciona a un programa desde el exterior para que pueda procesarlos. Algunos ejemplos de entradas comunes incluyen:
+
+1. **Datos del usuario:** Cuando un programa solicita información al usuario, como ingresar su nombre, edad o cualquier otro dato, esos valores se consideran entradas. Por ejemplo, un programa que pide un número y realiza cálculos con él.
+
+2. **Archivos:** Los programas pueden leer datos almacenados en archivos como una forma de entrada. Por ejemplo, un programa de procesamiento de texto puede leer el contenido de un archivo para editarlo.
+
+3. **Datos de red:** Los programas pueden recibir datos a través de una conexión de red, como datos de una API web o mensajes de otros programas que se comunican en una red.
+
+4. **Sensores y dispositivos externos:** En sistemas más avanzados, los programas pueden recibir datos de sensores, cámaras, micrófonos u otros dispositivos periféricos para procesarlos.
+
+**Salidas (Outputs):**
+
+Las salidas son los resultados o respuestas que un programa genera y envía hacia el exterior para que puedan ser utilizados o visualizados. Algunos ejemplos de salidas comunes incluyen:
+
+1. **Mensajes en pantalla:** Los programas pueden mostrar mensajes o resultados en la pantalla para que el usuario los vea. Por ejemplo, un programa que muestra el resultado de una operación matemática.
+
+2. **Archivos:** Los programas pueden generar archivos con resultados o datos procesados, que luego se pueden guardar para su posterior uso.
+
+3. **Datos de red:** Los programas pueden enviar datos a través de una conexión de red, como enviar información a un servidor web o a otros dispositivos en una red.
+
+4. **Impresiones:** Algunos programas pueden enviar información directamente a una impresora para que se imprima en papel.
+
+5. **Control de dispositivos externos:** En sistemas más avanzados, los programas pueden enviar instrucciones a dispositivos periféricos, como motores o actuadores, para que realicen acciones físicas basadas en el resultado del procesamiento.
+
+La capacidad de recibir entradas y producir salidas es fundamental para la utilidad de los programas, ya que les permite interactuar con el mundo real y cumplir con sus objetivos específicos. En la mayoría de los lenguajes de programación, existen mecanismos y funciones específicas para manejar las entradas y salidas de manera eficiente y efectiva.

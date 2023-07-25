@@ -1,0 +1,20 @@
+Las estructuras de control en JavaScript son herramientas fundamentales que permiten a los desarrolladores controlar el flujo de ejecución de un programa. Estas estructuras permiten tomar decisiones, repetir tareas y ejecutar diferentes acciones según condiciones específicas. Las tres estructuras de control principales en JavaScript son:
+
+1. **Estructuras de Control de Selección (Decisiones):**
+   - **if:** Permite ejecutar un bloque de código si una condición es verdadera.
+   - **else:** Opcionalmente se utiliza junto con `if` para ejecutar un bloque de código si la condición de `if` es falsa.
+   - **else if:** Se utiliza para evaluar múltiples condiciones en secuencia.
+   - **switch:** Permite comparar una expresión con múltiples casos y ejecutar el bloque de código asociado a la primera coincidencia.
+
+2. **Estructuras de Control de Repetición (Bucles):**
+   - **while:** Ejecuta un bloque de código mientras una condición sea verdadera.
+   - **do-while:** Similar a `while`, pero asegura que el bloque de código se ejecuta al menos una vez, incluso si la condición es falsa desde el principio.
+   - **for:** Realiza una iteración mediante una expresión de inicialización, una condición y una expresión de incremento o decremento.
+   - **for...in:** Utilizado para iterar sobre las propiedades de un objeto.
+   - **for...of:** Utilizado para iterar sobre elementos de una colección iterable, como un array o una cadena de texto.
+
+3. **Estructuras de Control de Salto (Saltos):**
+   - **break:** Utilizado para salir de un bucle o una estructura de control, terminando la ejecución del bloque de código.
+   - **continue:** Utilizado para saltar a la siguiente iteración de un bucle, omitiendo el resto del bloque de código actual.
+
+Las estructuras de control en JavaScript son esenciales para crear algoritmos complejos y programas funcionales. Permiten que los desarrolladores tomen decisiones basadas en condiciones, realicen tareas repetitivas de manera eficiente y controlen el flujo de ejecución del programa según las necesidades específicas. La combinación de estas estructuras de control permite que los programas sean más flexibles, adaptativos y capaces de manejar diferentes escenarios. Un buen entendimiento y uso adecuado de las estructuras de control en JavaScript son fundamentales para la programación efectiva y la solución de problemas complejos.

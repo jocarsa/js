@@ -1,0 +1,17 @@
+JSON (JavaScript Object Notation) es un formato de intercambio de datos ligero y ampliamente utilizado en programación. Es una forma de representar datos estructurados en un formato legible tanto para humanos como para máquinas. JSON se ha convertido en un estándar de facto para la transmisión y almacenamiento de datos en aplicaciones web y servicios web.
+
+Las características clave de JSON en JavaScript son las siguientes:
+
+1. **Sintaxis Basada en Objetos:** JSON utiliza una sintaxis basada en objetos que es similar a la notación literal de objetos en JavaScript. Los datos se organizan en pares de clave-valor, donde las claves son cadenas de texto y los valores pueden ser números, cadenas, booleanos, arrays, objetos o el valor nulo.
+
+2. **Formato Ligero y Fácil de Leer:** La sintaxis de JSON es simple y legible, lo que facilita su comprensión tanto para los desarrolladores como para los usuarios.
+
+3. **Independiente del Lenguaje:** JSON es un formato independiente del lenguaje, lo que significa que se puede utilizar en diferentes lenguajes de programación. Esto lo hace ideal para la comunicación entre diferentes sistemas y plataformas.
+
+4. **Compatible con JavaScript:** JSON es nativo de JavaScript y es fácilmente compatible con el lenguaje. JavaScript proporciona funciones nativas como `JSON.parse()` y `JSON.stringify()` para convertir objetos y strings JSON en estructuras de datos JavaScript y viceversa.
+
+5. **Serialización y Deserialización:** La serialización es el proceso de convertir una estructura de datos en formato JSON (como un objeto JavaScript) en una cadena JSON, mientras que la deserialización es el proceso inverso, convirtiendo una cadena JSON en una estructura de datos nativa del lenguaje (como un objeto JavaScript).
+
+6. **Comunicación de Datos:** JSON se utiliza comúnmente para la transmisión de datos entre clientes y servidores en aplicaciones web, ya que es más ligero y más fácil de analizar en comparación con formatos más verbosos, como XML.
+
+JSON es ampliamente utilizado en aplicaciones web y servicios web para intercambiar datos estructurados entre el cliente y el servidor. Se utiliza en la comunicación de APIs (Application Programming Interfaces) RESTful, en el almacenamiento de datos en bases de datos NoSQL, en la configuración de aplicaciones, y en muchos otros escenarios en los que se necesita un formato de intercambio de datos eficiente y fácil de usar.

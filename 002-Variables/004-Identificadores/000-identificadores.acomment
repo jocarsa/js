@@ -1,0 +1,17 @@
+En JavaScript, los identificadores son nombres utilizados para representar variables, constantes, funciones, clases u otros elementos en el código. Estos nombres son esenciales para identificar y acceder a los distintos elementos que forman parte del programa.
+
+Las reglas para nombrar identificadores en JavaScript son las siguientes:
+
+1. Los identificadores pueden contener letras (mayúsculas y minúsculas), dígitos numéricos (0-9) y los caracteres especiales `_` (guion bajo) y `$` (signo de dólar).
+
+2. Un identificador no puede comenzar con un número. Debe comenzar con una letra, `_` o `$`. Por ejemplo, `nombre`, `_valor`, `$total` son identificadores válidos, pero `123abc` no lo es.
+
+3. Los identificadores son sensibles a mayúsculas y minúsculas. Esto significa que `nombre` y `Nombre` son identificadores diferentes.
+
+4. No se pueden utilizar palabras clave reservadas del lenguaje como identificadores. Las palabras clave son términos especiales que tienen un significado específico en JavaScript, como `if`, `else`, `while`, `function`, etc.
+
+5. Los identificadores no pueden contener espacios ni caracteres especiales como `!`, `@`, `#`, `%`, etc.
+
+6. Se recomienda utilizar nombres descriptivos para los identificadores para mejorar la legibilidad y comprensión del código. Los nombres deben reflejar el propósito o la función del elemento que representan.
+
+Es importante seguir estas reglas al nombrar identificadores en JavaScript para asegurar que el código sea válido y fácil de entender para otros desarrolladores. Un uso adecuado y consistente de los nombres de identificadores facilita el mantenimiento y la colaboración en proyectos de desarrollo.

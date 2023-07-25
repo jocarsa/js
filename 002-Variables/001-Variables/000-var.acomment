@@ -1,0 +1,15 @@
+En JavaScript, `var` es una palabra clave que se utilizaba anteriormente para declarar variables. Sin embargo, con la introducción de ECMAScript 6 (ES6) en 2015, se recomienda el uso de `let` y `const` en lugar de `var`. Aun así, es importante entender cómo funciona `var` para comprender el código legado y las diferencias con las variables declaradas con `let` y `const`.
+
+**Declaración y alcance:**
+Cuando declaras una variable con `var`, esta se declara en el ámbito de función más cercano. Esto significa que la variable es accesible dentro de la función en la que se declara y también puede ser visible fuera de esa función, incluso si está dentro de un bloque de código como un `if` o un `for`.
+
+**Elevación (hoisting):**
+Una característica importante de las variables declaradas con `var` es el comportamiento de elevación (hoisting). La elevación es un proceso en el cual las declaraciones de variables son "elevadas" al comienzo del ámbito de función o global, lo que permite que se accedan a ellas antes de su declaración real en el código. Sin embargo, su asignación o valor asignado no se eleva, solo la declaración.
+
+**Redeclaración:**
+Otra particularidad de `var` es que permite la redeclaración de una variable en el mismo ámbito sin lanzar un error. Esto puede llevar a errores sutiles y dificultar la detección de problemas en el código.
+
+**Diferencias con let y const:**
+En comparación con `let` y `const`, `var` tiene un alcance de función, mientras que `let` tiene un alcance de bloque y `const` también tiene un alcance de bloque, pero no permite la reasignación del valor después de su declaración.
+
+En resumen, `var` se utiliza para declarar variables en JavaScript, pero debido a sus particularidades, como el alcance de función y la elevación, se recomienda preferir `let` y `const` en su lugar, ya que ofrecen un comportamiento más predecible y una mejor gestión de alcance en el código. Es importante estar al tanto de estas diferencias al trabajar con código existente que utiliza `var`.

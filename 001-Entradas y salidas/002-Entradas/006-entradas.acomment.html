@@ -1,0 +1,37 @@
+En el ejemplo de código proporcionado, tenemos una página HTML que contiene un campo de entrada (`<input>`) de tipo texto y un botón (`<button>`), ambos con identificadores (`id`) específicos. Además, hay un bloque de código JavaScript que interactúa con el botón y el campo de entrada. A continuación, explicaré tanto la parte JavaScript como la parte HTML relacionada con el código JavaScript:
+
+**Parte HTML:**
+
+1. `<input type="text" id="nombre">`: Esta es una etiqueta de entrada (`<input>`) de tipo texto. Representa un campo de entrada donde los usuarios pueden escribir texto. Tiene el identificador (`id`) "nombre", que permite identificar el campo de entrada mediante CSS y JavaScript.
+
+2. `<button id="miboton">Púlsame</button>`: Esta es una etiqueta de botón (`<button>`). Representa un botón interactivo en la página. Tiene el identificador "miboton", que permite identificar el botón mediante CSS y JavaScript. El texto "Púlsame" se muestra como el contenido del botón.
+
+**Parte JavaScript:**
+
+```html
+<script>
+    document.getElementById("miboton").onclick = function(){
+        console.log("Has escrito: " + document.getElementById("nombre").value);
+    }
+</script>
+```
+
+Dentro del bloque de código JavaScript, tenemos una línea que utiliza la función `document.getElementById()` para obtener el botón con el identificador "miboton" y luego se asigna una función a su evento `onclick`. También, dentro de esta función, tenemos otra línea que utiliza `document.getElementById("nombre").value` para obtener el valor del campo de entrada con el identificador "nombre".
+
+- `document.getElementById("miboton")`: Esta parte del código utiliza la función `document.getElementById()` para obtener el botón del DOM (Documento de Objeto Modelo) que tiene el identificador "miboton".
+
+- `.onclick = function(){...}`: Después de obtener el botón con el identificador "miboton", se asigna una función anónima a su evento `onclick`. El evento `onclick` se activa cuando el usuario hace clic en el botón.
+
+- `function(){...}`: Esta es una función anónima que se asigna al evento `onclick`. Dentro de esta función, tenemos una línea que utiliza `console.log()` para imprimir el mensaje "Has escrito: " seguido del valor del campo de entrada en la consola del navegador.
+
+- `document.getElementById("nombre").value`: Esta parte del código utiliza la función `document.getElementById()` para obtener el campo de entrada con el identificador "nombre". Luego, se accede a la propiedad `value` del campo de entrada para obtener el texto que el usuario ha escrito en el campo.
+
+Cuando el usuario hace clic en el botón después de escribir texto en el campo de entrada, el evento `onclick` se activa y ejecuta la función anónima asociada. Como resultado, el mensaje "Has escrito: " seguido del texto ingresado en el campo de entrada se imprimirá en la consola del navegador.
+
+Por ejemplo, si escribes "Hola Mundo" en el campo de entrada y haces clic en el botón, verás el siguiente resultado en la consola:
+
+```
+Has escrito: Hola Mundo
+```
+
+Este ejemplo muestra cómo podemos interactuar con elementos HTML y obtener información del usuario utilizando JavaScript. Los eventos como `onclick` permiten responder a las acciones del usuario y realizar diferentes acciones dinámicas en una página web.

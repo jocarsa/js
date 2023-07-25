@@ -1,0 +1,21 @@
+En JavaScript, las variables son contenedores que se utilizan para almacenar valores o datos. Estos valores pueden ser números, texto, objetos, arreglos u otros tipos de datos. Las variables permiten que el programa almacene y manipule información de manera dinámica durante la ejecución.
+
+Para declarar una variable en JavaScript, se utiliza la palabra clave `var`, `let` o `const`, seguida por el nombre de la variable. El nombre de la variable debe seguir ciertas reglas, como comenzar con una letra, un guión bajo (_) o un signo de dólar ($), y puede contener letras, números y guiones bajos. Además, JavaScript es un lenguaje de programación con tipado dinámico, lo que significa que no es necesario especificar el tipo de datos que contendrá la variable al declararla; el tipo se infiere automáticamente en función del valor asignado.
+
+**Tipos de variables en JavaScript:**
+
+1. **Variables con `var`:** Hasta ECMAScript 5 (ES5), se utilizaba la palabra clave `var` para declarar variables. Sin embargo, a partir de ECMAScript 6 (ES6), se recomienda utilizar `let` y `const` en su lugar.
+
+2. **Variables con `let`:** `let` permite declarar variables cuyo valor puede ser reasignado, lo que significa que el contenido de la variable puede cambiar durante la ejecución del programa.
+
+3. **Variables con `const`:** `const` se utiliza para declarar variables cuyo valor no puede ser reasignado después de su declaración. Sin embargo, esto no significa que el contenido del valor en sí no pueda ser modificado, especialmente si es un objeto o un arreglo.
+
+**Alcance de las variables:**
+
+En JavaScript, el alcance de una variable se define por el bloque de código en el que está declarada. Las variables declaradas con `var` tienen un alcance de función, lo que significa que están disponibles dentro de la función en la que se declaran y también pueden filtrarse fuera de ella si no hay otro bloque de código que limite su alcance. Por otro lado, las variables declaradas con `let` y `const` tienen un alcance de bloque, lo que significa que solo son accesibles dentro del bloque de código en el que se declaran.
+
+**Inicialización de variables:**
+
+En JavaScript, las variables pueden declararse sin asignarles un valor, en cuyo caso tendrán el valor `undefined` hasta que se les asigne uno.
+
+Es importante entender cómo funcionan las variables en JavaScript para utilizarlas adecuadamente y evitar errores o comportamientos inesperados en el código. Además, la elección del tipo de variable (`let` o `const`) y su alcance adecuado dependerá de los requerimientos específicos del programa.

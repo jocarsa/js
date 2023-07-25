@@ -1,0 +1,15 @@
+En JavaScript, las entradas se refieren a la forma en que un programa obtiene datos o información desde el exterior para ser procesados y utilizados en el código. Estas entradas pueden provenir de diversas fuentes, como el usuario, otros programas o dispositivos externos. Las entradas son fundamentales para que un programa pueda interactuar con el mundo exterior y realizar tareas útiles.
+
+Algunas formas comunes de obtener entradas en JavaScript son:
+
+1. **Interacción del usuario:** Los programas pueden recibir datos directamente del usuario a través de la interfaz de usuario. Esto incluye la entrada de texto en campos de texto, selección de opciones en menús desplegables, clics en botones y otros elementos interactivos de una página web.
+
+2. **Eventos:** JavaScript puede detectar eventos que ocurren en una página web, como clics de ratón, pulsaciones de teclas o cambios en el contenido de un elemento. Estos eventos pueden generar entradas que se utilizan para desencadenar funciones o realizar acciones específicas.
+
+3. **Datos de fuentes externas:** Los programas pueden recibir datos de fuentes externas, como archivos almacenados en el servidor, información de APIs web, mensajes de otros programas a través de conexiones de red, o incluso datos de sensores y dispositivos periféricos conectados al equipo.
+
+4. **Cookies y almacenamiento local:** Los programas pueden acceder a datos almacenados en cookies o en el almacenamiento local del navegador para obtener información previamente guardada.
+
+Una vez que se obtienen las entradas, el programa puede procesar y utilizar esos datos para realizar cálculos, mostrar resultados, interactuar con otros sistemas, actualizar la interfaz de usuario o realizar cualquier otra acción requerida para cumplir con su propósito específico.
+
+Es importante que los programas manejen adecuadamente las entradas para validar, limpiar o filtrar los datos ingresados por el usuario y asegurarse de que sean seguros y válidos antes de procesarlos. Además, la correcta manipulación de las entradas también contribuye a mejorar la usabilidad y la experiencia del usuario al interactuar con el programa.

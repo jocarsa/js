@@ -1,0 +1,15 @@
+En JavaScript, los operadores booleanos se utilizan para realizar operaciones lógicas y producir resultados booleanos (`true` o `false`). Estos operadores son esenciales para implementar lógica condicional y tomar decisiones basadas en múltiples condiciones en un programa.
+
+Los operadores booleanos en JavaScript son los siguientes:
+
+1. **AND lógico (`&&`):** Este operador se utiliza para evaluar dos condiciones. Devuelve `true` si ambas condiciones son verdaderas; de lo contrario, devuelve `false`.
+
+2. **OR lógico (`||`):** Este operador se utiliza para evaluar dos condiciones. Devuelve `true` si al menos una de las condiciones es verdadera; si ambas son falsas, devuelve `false`.
+
+3. **NOT lógico (`!`):** Este operador se utiliza para negar una condición. Si la condición es `true`, el operador NOT la convierte en `false`, y si la condición es `false`, el operador NOT la convierte en `true`.
+
+Los operadores booleanos son muy útiles para combinar expresiones lógicas y controlar el flujo del programa en función de múltiples condiciones. Se utilizan en estructuras condicionales como `if`, `else`, `else if`, `switch` y en bucles como `while` y `for`.
+
+Es importante comprender cómo funcionan los operadores booleanos y cómo afectan el resultado de las expresiones lógicas. Además, también es crucial tener en cuenta el orden de evaluación de los operadores (precedencia) y cómo se pueden utilizar paréntesis para cambiar el orden de evaluación cuando sea necesario.
+
+El uso adecuado de los operadores booleanos permite realizar decisiones y ejecutar acciones condicionales en el código de manera efectiva y precisa, lo que es esencial para desarrollar aplicaciones y programas funcionales y lógicos.

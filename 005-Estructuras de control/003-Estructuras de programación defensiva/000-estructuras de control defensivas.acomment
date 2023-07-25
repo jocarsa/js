@@ -1,0 +1,17 @@
+Las estructuras de control defensivas en JavaScript son técnicas utilizadas para garantizar la seguridad y el buen funcionamiento de un programa frente a posibles errores o situaciones inesperadas. Estas estructuras están diseñadas para evitar que el programa se detenga abruptamente o produzca resultados no deseados debido a datos inesperados o errores de ejecución.
+
+Las estructuras de control defensivas más comunes en JavaScript incluyen:
+
+1. **Validación de Datos:** Antes de procesar o utilizar datos recibidos desde fuentes externas, como formularios de usuario o servicios web, se lleva a cabo una validación exhaustiva para garantizar que los datos cumplan con las expectativas del programa. Esto implica verificar que los datos sean del tipo esperado, que estén dentro de rangos válidos y que no estén vacíos o nulos, entre otras comprobaciones.
+
+2. **Manejo de Errores:** Se utilizan bloques de código `try...catch` para capturar y manejar errores que puedan ocurrir durante la ejecución del programa. De esta manera, si ocurre un error, el programa no se detendrá, y en su lugar, se ejecutará el bloque de código del `catch`, donde se puede proporcionar información sobre el error o tomar medidas para recuperarse.
+
+3. **Comprobación de Propiedades y Referencias:** Antes de acceder a propiedades de objetos o a elementos de arrays, se realiza una verificación para asegurarse de que la propiedad o el índice existan y no sean nulos o indefinidos. Esto evita errores de referencia nula que podrían interrumpir el flujo del programa.
+
+4. **Validación de Argumentos:** Cuando se definen funciones, se puede realizar una validación de los argumentos que se pasan a la función para asegurarse de que sean del tipo y la cantidad esperados. Esto ayuda a prevenir errores al invocar funciones con parámetros incorrectos.
+
+5. **Uso de Valores Predeterminados:** En algunos casos, es posible que los datos no estén disponibles o sean indefinidos. En lugar de utilizar valores indefinidos, se puede asignar un valor predeterminado para garantizar que la operación continúe sin problemas.
+
+6. **Control de Flujo con Estructuras Condicionales:** Se utilizan estructuras condicionales como `if`, `else`, `else if`, y `switch` para tomar decisiones basadas en diferentes situaciones y evitar ejecutar bloques de código innecesarios o indeseados.
+
+El uso de estructuras de control defensivas es una práctica recomendada en programación para mejorar la robustez y la estabilidad de un programa. Al anticiparse a posibles errores y situaciones inesperadas, se logra un código más seguro y confiable que puede manejar escenarios inesperados sin colapsar o producir resultados incorrectos. Estas técnicas son especialmente útiles en aplicaciones críticas o en entornos donde los datos pueden ser impredecibles o provenir de fuentes externas.

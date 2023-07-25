@@ -1,0 +1,19 @@
+En JavaScript, los operadores son símbolos o palabras clave que se utilizan para realizar operaciones sobre datos, como realizar cálculos matemáticos, comparar valores o combinar cadenas de texto. Los operadores permiten manipular y transformar los datos de diferentes maneras, lo que es fundamental para desarrollar lógica y funcionalidades en un programa.
+
+Los operadores se clasifican en diferentes categorías según el tipo de operaciones que realizan:
+
+1. **Operadores Aritméticos:** Estos operadores se utilizan para realizar cálculos matemáticos, como sumar (`+`), restar (`-`), multiplicar (`*`), dividir (`/`) y obtener el residuo de una división (`%`).
+
+2. **Operadores de Asignación:** Estos operadores se utilizan para asignar valores a variables. El operador de asignación básico es `=`, pero también existen operadores de asignación compuestos como `+=`, `-=`, `*=`, `/=` y `%=` que realizan una operación y asignan el resultado a la variable.
+
+3. **Operadores de Comparación:** Estos operadores se utilizan para comparar valores y producir un resultado booleano (`true` o `false`). Algunos ejemplos son `==` (igual), `!=` (no igual), `>`, `<`, `>=` (mayor o igual) y `<=` (menor o igual).
+
+4. **Operadores Lógicos:** Los operadores lógicos se utilizan para combinar o invertir valores booleanos. Los principales operadores lógicos son `&&` (AND lógico), `||` (OR lógico) y `!` (NOT lógico).
+
+5. **Operadores de Incremento y Decremento:** Estos operadores se utilizan para aumentar o disminuir el valor de una variable en una unidad. Los operadores de incremento son `++` (incremento) y `--` (decremento).
+
+6. **Operadores de Concatenación:** En el contexto de cadenas de texto, el operador `+` se utiliza para concatenar o unir cadenas.
+
+7. **Operadores de Tipo:** Estos operadores se utilizan para determinar el tipo de datos de una variable o expresión. Por ejemplo, `typeof` devuelve una cadena que representa el tipo de datos de una variable.
+
+Los operadores son fundamentales para realizar tareas y cálculos complejos en JavaScript. Es importante comprender cómo funcionan los operadores y cómo se combinan con los diferentes tipos de datos para desarrollar código eficiente y efectivo. Al utilizar los operadores adecuadamente, se puede realizar una amplia variedad de tareas, desde simples cálculos hasta lógica compleja, para crear aplicaciones y funcionalidades avanzadas.

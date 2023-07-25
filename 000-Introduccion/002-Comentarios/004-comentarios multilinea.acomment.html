@@ -1,0 +1,32 @@
+En JavaScript, además de los comentarios de una sola línea que mencionamos anteriormente, también puedes agregar comentarios de varias líneas. Los comentarios multilínea son útiles cuando deseas incluir explicaciones más detalladas, documentación o incluso bloquear temporalmente ciertas partes del código sin que se ejecuten. 
+
+Los comentarios multilínea se crean utilizando la sintaxis de "bloque de comentarios", que consiste en encerrar el texto del comentario entre los caracteres `/*` y `*/`. Aquí tienes un ejemplo:
+
+```javascript
+/*
+Este es un comentario
+de múltiples líneas.
+Puedes escribir varias líneas de texto aquí
+para proporcionar una explicación más detallada
+del código o su funcionamiento.
+*/
+```
+
+El intérprete de JavaScript ignorará todo el contenido dentro del bloque de comentarios y no lo ejecutará como parte del programa. Estos comentarios son útiles para proporcionar documentación extensa, explicaciones de funciones o algoritmos complejos, agradecimientos, licencias de software, entre otros.
+
+Un ejemplo común es la descripción de una función:
+
+```javascript
+/*
+Función que calcula el área de un círculo.
+@param {number} radio - El radio del círculo.
+@return {number} - El área del círculo.
+*/
+function calcularAreaCirculo(radio) {
+  return Math.PI * radio * radio;
+}
+```
+
+En este caso, el comentario explica el propósito de la función, los parámetros que recibe y el tipo de valor que devuelve, lo que facilita el uso y comprensión de la función por parte de otros desarrolladores.
+
+Recuerda que los comentarios son una buena práctica en la programación porque hacen que el código sea más legible y comprensible para ti y para otros colaboradores que puedan revisar o mantener el código en el futuro.

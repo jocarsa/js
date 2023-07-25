@@ -1,0 +1,43 @@
+En JavaScript, las salidas se refieren a la forma en que un programa puede mostrar resultados o información al usuario o a otros sistemas. Para mostrar salidas en JavaScript, se utilizan principalmente dos métodos: `console.log()` y la manipulación del DOM (Document Object Model).
+
+**1. Salidas con `console.log()`:**
+El método `console.log()` es una función incorporada en JavaScript que permite imprimir mensajes o valores en la consola del navegador o en la consola del entorno de desarrollo. Es una herramienta de depuración muy útil para mostrar información mientras se desarrolla y prueba un programa. Su sintaxis es simple:
+
+```javascript
+console.log(valor); // Muestra el valor o mensaje en la consola
+```
+
+Ejemplo:
+```javascript
+let nombre = "Juan";
+console.log("Hola, " + nombre); // Salida: Hola, Juan
+```
+
+Esta salida se mostrará en la consola del navegador o del entorno de desarrollo, dependiendo de dónde se esté ejecutando el código.
+
+**2. Salidas mediante manipulación del DOM:**
+El Document Object Model (DOM) es una representación en forma de árbol de la estructura de un documento HTML. JavaScript puede acceder y modificar el DOM para mostrar o actualizar contenido en una página web. Se puede cambiar el contenido de elementos HTML específicos, lo que permite mostrar salidas en la propia página web.
+
+Ejemplo:
+HTML:
+```html
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Salida en JavaScript</title>
+</head>
+<body>
+  <div id="output"></div>
+</body>
+</html>
+```
+
+JavaScript:
+```javascript
+let nombre = "Juan";
+document.getElementById("output").textContent = "Hola, " + nombre;
+```
+
+En este ejemplo, el código JavaScript obtiene el elemento con el ID "output" y luego actualiza su contenido con el mensaje "Hola, Juan". Al cargar la página, veremos que se mostrará el mensaje en el área definida por el elemento `<div>` con el ID "output".
+
+Estos dos métodos son los más comunes para mostrar salidas en JavaScript. La elección del método depende del contexto y del objetivo que se busque. El uso de `console.log()` es más común para pruebas y depuración, mientras que la manipulación del DOM es esencial para interactuar con el contenido visible de una página web en tiempo de ejecución.

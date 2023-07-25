@@ -1,0 +1,13 @@
+Las estructuras de control de bucle en JavaScript son una parte fundamental de la programación que permite repetir tareas o ejecutar un bloque de código varias veces mientras se cumpla una condición específica. Estas estructuras de bucle son esenciales para automatizar tareas repetitivas y realizar iteraciones sobre colecciones de datos. Las estructuras de control de bucle en JavaScript incluyen:
+
+1. **while:** La estructura de bucle `while` ejecuta un bloque de código mientras una condición sea verdadera. Antes de cada iteración, se evalúa la condición y, si es verdadera, el bloque de código se ejecuta. El bucle continuará repitiéndose hasta que la condición se vuelva falsa.
+
+2. **do-while:** Similar al bucle `while`, pero con una diferencia importante. El bucle `do-while` primero ejecuta el bloque de código y luego evalúa la condición. Esto garantiza que el bloque de código se ejecute al menos una vez, incluso si la condición es falsa desde el principio.
+
+3. **for:** La estructura de bucle `for` se utiliza para realizar una iteración mediante una expresión de inicialización, una condición y una expresión de incremento o decremento. El bucle `for` es muy útil cuando se conoce el número exacto de iteraciones.
+
+4. **for...in:** El bucle `for...in` se utiliza para iterar sobre las propiedades de un objeto. Permite recorrer todas las claves (propiedades) de un objeto y realizar acciones en cada una de ellas.
+
+5. **for...of:** El bucle `for...of` se utiliza para iterar sobre elementos de una colección iterable, como un array o una cadena de texto. A diferencia del bucle `for...in`, que itera sobre las claves, el bucle `for...of` recorre directamente los valores de la colección.
+
+Estas estructuras de control de bucle en JavaScript son esenciales para manejar tareas repetitivas, procesar listas de elementos y realizar iteraciones sobre conjuntos de datos. Los bucles permiten a los desarrolladores automatizar tareas y realizar operaciones complejas en grandes conjuntos de datos de manera eficiente. Sin las estructuras de control de bucle, muchas tareas repetitivas tendrían que escribirse manualmente para cada elemento, lo que sería tedioso y propenso a errores. Los bucles proporcionan una forma estructurada y eficiente de repetir tareas y son una herramienta poderosa para la programación en JavaScript y en muchos otros lenguajes de programación.

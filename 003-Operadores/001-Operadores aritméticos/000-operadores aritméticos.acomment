@@ -1,0 +1,23 @@
+En JavaScript, los operadores aritméticos se utilizan para realizar cálculos matemáticos en datos numéricos. Estos operadores permiten realizar operaciones de suma, resta, multiplicación, división y obtener el residuo de una división. Los operadores aritméticos son fundamentales para realizar cálculos numéricos y son comunes en casi todos los lenguajes de programación.
+
+Los operadores aritméticos en JavaScript son los siguientes:
+
+1. **Suma (+):** Se utiliza para sumar dos valores numéricos o para concatenar cadenas de texto cuando al menos uno de los operandos es una cadena.
+
+2. **Resta (-):** Se utiliza para restar un valor numérico de otro valor numérico.
+
+3. **Multiplicación (*):** Se utiliza para multiplicar dos valores numéricos.
+
+4. **División (/):** Se utiliza para dividir un valor numérico por otro valor numérico.
+
+5. **Residuo (%):** También conocido como operador módulo, se utiliza para obtener el residuo de una división entre dos valores numéricos.
+
+6. **Incremento (++):** Se utiliza para aumentar en una unidad el valor de una variable.
+
+7. **Decremento (--):** Se utiliza para disminuir en una unidad el valor de una variable.
+
+Los operadores aritméticos siguen las reglas de precedencia y asociatividad típicas de las operaciones matemáticas. Esto significa que las operaciones se realizan en un orden específico, y se pueden utilizar paréntesis para alterar el orden de ejecución.
+
+Es importante tener en cuenta que los operadores aritméticos solo se aplican a datos numéricos. Si intentas usarlos en cadenas de texto u otros tipos de datos, JavaScript intentará convertir los operandos a valores numéricos antes de realizar la operación.
+
+Los operadores aritméticos son ampliamente utilizados en la programación para realizar cálculos y manipulaciones numéricas esenciales en aplicaciones y programas. Es crucial comprender cómo funcionan estos operadores y cómo se aplican en diferentes situaciones para desarrollar lógica y algoritmos efectivos en JavaScript.

@@ -1,0 +1,26 @@
+En JavaScript, los comentarios son porciones de texto que se agregan al código para proporcionar explicaciones, notas o documentación sin afectar la ejecución del programa. Los comentarios no tienen ningún impacto en el funcionamiento del código y son ignorados por el intérprete o el compilador de JavaScript. Su único propósito es ayudar a los desarrolladores a entender el código, facilitar la colaboración en equipo y mejorar la legibilidad del programa.
+
+Los comentarios se utilizan para:
+
+1. **Explicar el código:** Puedes utilizar comentarios para explicar el propósito o la lógica detrás de una determinada sección de código. Esto ayuda a otros desarrolladores, e incluso a ti mismo en el futuro, a comprender más fácilmente lo que hace el código.
+
+2. **Documentar funciones y métodos:** Los comentarios son especialmente útiles para describir el propósito de una función o método, especificar los parámetros que acepta y el tipo de valor que devuelve. Esta documentación interna facilita el uso correcto de las funciones y mejora la mantenibilidad del código.
+
+3. **Desactivar temporalmente parte del código:** Si tienes una sección de código que no deseas que se ejecute temporalmente, puedes comentarla en lugar de eliminarla. Esto es útil cuando deseas hacer pruebas o probar diferentes enfoques sin eliminar el código original.
+
+Existen dos tipos principales de comentarios en JavaScript:
+
+1. **Comentarios de una sola línea:** Se crean con `//`. Todo lo que viene después de estas dos barras será ignorado por el intérprete hasta el final de la línea.
+   ```javascript
+   // Esto es un comentario de una sola línea
+   let nombre = "Juan"; // Esto también es un comentario de una sola línea
+   ```
+
+2. **Comentarios de múltiples líneas:** También se les conoce como comentarios en bloque y se crean entre `/*` y `*/`. Puedes escribir múltiples líneas de texto dentro de estos caracteres, y todo el contenido será ignorado.
+   ```javascript
+   /* Esto es un comentario
+   de múltiples líneas. Puedes
+   escribir varias líneas aquí. */
+   ```
+
+Es importante utilizar comentarios adecuadamente para mejorar la legibilidad y la comprensión del código. Un código bien comentado es más fácil de mantener y colaborar, lo que resulta en un desarrollo más eficiente y una mejor calidad del software.

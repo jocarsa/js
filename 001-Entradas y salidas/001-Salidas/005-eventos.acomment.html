@@ -1,0 +1,33 @@
+En el ejemplo de código proporcionado, tenemos una página HTML que contiene un botón (`<button>`) con un identificador (`id`) específico y un bloque de código JavaScript que interactúa con ese botón. A continuación, explicaré tanto la parte JavaScript como la parte HTML relacionada con el código JavaScript:
+
+**Parte HTML:**
+
+1. `<button id="miboton">Púlsame</button>`: Esta es una etiqueta de botón (`<button>`) con el identificador (`id`) "miboton". Representa un botón interactivo en la página que puede ser identificado mediante CSS y JavaScript. El texto "Púlsame" se muestra como el contenido del botón.
+
+**Parte JavaScript:**
+
+```html
+<script>
+    document.getElementById("miboton").onclick = function(){
+        console.log("Has pulsado un botón");
+    }
+</script>
+```
+
+Dentro del bloque de código JavaScript, tenemos una línea que utiliza la función `document.getElementById()` para obtener el elemento con el identificador "miboton" y luego asigna una función a su evento `onclick`.
+
+- `document.getElementById("miboton")`: Esta parte del código utiliza la función `document.getElementById()` para obtener el elemento del DOM (Documento de Objeto Modelo) que tiene el identificador "miboton". El método `getElementById()` permite acceder a un elemento específico de la página HTML mediante su identificador único.
+
+- `.onclick = function(){...}`: Después de obtener el botón con el identificador "miboton", se asigna una función a su evento `onclick`. El evento `onclick` se activa cuando el usuario hace clic en el botón.
+
+- `function(){...}`: Esta es una función anónima que se asigna al evento `onclick`. Dentro de esta función, tenemos una línea que utiliza `console.log()` para imprimir el mensaje "Has pulsado un botón" en la consola del navegador.
+
+Cuando el usuario hace clic en el botón en el navegador, el evento `onclick` se activa y ejecuta la función anónima asociada. Como resultado, el mensaje "Has pulsado un botón" se imprimirá en la consola del navegador.
+
+Por ejemplo, si haces clic en el botón en el navegador, verás el siguiente resultado en la consola:
+
+```
+Has pulsado un botón
+```
+
+Este tipo de interacción con eventos es muy común en JavaScript y permite a los desarrolladores crear páginas web interactivas y responder a las acciones del usuario de manera dinámica.

@@ -1,0 +1,18 @@
+En JavaScript, `let` es una palabra clave que se utiliza para declarar variables con alcance de bloque. Fue introducida en ECMAScript 6 (ES6) como una alternativa a la palabra clave `var` para mejorar la gestión de alcance y evitar algunos problemas asociados con `var`.
+
+**Declaración y alcance:**
+Cuando declaras una variable con `let`, esta tiene un alcance de bloque, lo que significa que solo es accesible dentro del bloque de código en el que se declara. Un bloque de código puede ser cualquier sección encerrada entre llaves `{}` como el cuerpo de una función, una estructura condicional (`if`, `else`, `switch`), un ciclo (`for`, `while`) o cualquier otro bloque de código.
+
+**No hay elevación (hoisting):**
+A diferencia de las variables declaradas con `var`, las variables declaradas con `let` no son elevadas (hoisted) al inicio del bloque en el que se encuentran. Esto significa que no se pueden acceder a ellas antes de su declaración real en el código.
+
+**Reasignación permitida:**
+Una variable declarada con `let` puede ser reasignada con un nuevo valor después de su declaración inicial. Esto permite que el valor de la variable cambie durante la ejecución del programa.
+
+**Sin redeclaración:**
+Una diferencia clave entre `let` y `var` es que `let` no permite la redeclaración de una variable en el mismo ámbito. Si intentas declarar una variable con el mismo nombre más de una vez dentro del mismo bloque, se producirá un error.
+
+**Mejor gestión de alcance:**
+El uso de `let` en lugar de `var` permite una gestión más predecible y clara del alcance de las variables en el código. Al limitar el alcance de una variable a un bloque específico, se evitan problemas de colisión de nombres y se facilita la comprensión del código.
+
+En resumen, `let` es una forma más moderna de declarar variables en JavaScript, que ofrece un alcance de bloque, no se eleva al inicio del bloque y no permite la redeclaración en el mismo ámbito. Al preferir `let` sobre `var`, se promueve una escritura de código más segura, legible y menos propensa a errores de alcance.

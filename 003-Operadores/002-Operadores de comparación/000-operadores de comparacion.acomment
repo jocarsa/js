@@ -1,0 +1,17 @@
+En JavaScript, los operadores de comparación se utilizan para comparar valores y producir un resultado booleano (`true` o `false`). Estos operadores permiten evaluar expresiones y tomar decisiones basadas en el resultado de las comparaciones. Los operadores de comparación son fundamentales para implementar lógica condicional en un programa.
+
+Los operadores de comparación en JavaScript son los siguientes:
+
+1. **Igual (==):** Comprueba si dos valores son iguales en contenido. No tiene en cuenta el tipo de datos, por lo que si los operandos son de tipos diferentes, JavaScript intentará convertirlos a un tipo común antes de la comparación.
+
+2. **No igual (!=):** Comprueba si dos valores no son iguales en contenido. Al igual que el operador de igualdad, no tiene en cuenta el tipo de datos y realiza conversiones si es necesario.
+
+3. **Igualdad estricta (===):** Comprueba si dos valores son iguales en contenido y también tienen el mismo tipo de datos. A diferencia del operador `==`, la igualdad estricta no realiza conversiones de tipo y solo devuelve `true` si ambos operandos son del mismo tipo y tienen el mismo contenido.
+
+4. **No igualdad estricta (!==):** Comprueba si dos valores no son iguales en contenido o tienen tipos de datos diferentes. Al igual que el operador de igualdad estricta, no realiza conversiones de tipo.
+
+5. **Mayor que (>), Mayor o igual que (>=), Menor que (<) y Menor o igual que (<=):** Estos operadores se utilizan para comparar dos valores numéricos y determinar si el primer valor es mayor, mayor o igual, menor o menor o igual que el segundo valor.
+
+Los operadores de comparación devuelven `true` si la comparación es verdadera y `false` si la comparación es falsa. Estos resultados booleanos son fundamentales para controlar el flujo del programa a través de estructuras condicionales como `if`, `else`, `switch`, y para realizar comparaciones en bucles y otros contextos.
+
+Es importante comprender cómo funcionan los operadores de comparación y cómo afecta el tipo de datos en las comparaciones. El uso adecuado de los operadores de comparación es esencial para tomar decisiones precisas en el código y para evitar errores y comportamientos inesperados en el programa.
