@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <title>Javascript</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        
+        <script>
+            var ajax = new XMLHttpRequest();
+            ajax.onreadystatechange = function() {
+                if (ajax.readyState==4 && ajax.status==200) {
+                    console.log(ajax.responseText);
+                }
+            }
+            ajax.open("GET","datos.json",true);
+            ajax.send();
+        </script>
+    </body>
+</html>
