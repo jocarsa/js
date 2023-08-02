@@ -1,0 +1,11 @@
+El sistema ASCII (American Standard Code for Information Interchange) es un conjunto de caracteres y un sistema de codificación de caracteres ampliamente utilizado para representar texto y caracteres en computadoras y dispositivos electrónicos. Fue desarrollado originalmente en la década de 1960 y se convirtió en uno de los primeros estándares de codificación de caracteres en el campo de la informática.
+
+El sistema ASCII asigna un número único de 7 bits (8 bits en la versión extendida) a cada caracter. Inicialmente, el conjunto ASCII original constaba de 128 caracteres, que incluían letras mayúsculas y minúsculas, dígitos numéricos, símbolos de puntuación y caracteres de control, como el retorno de carro y el salto de línea. Por ejemplo, la letra "A" se representa por el número 65, la letra "a" por el número 97, el dígito "1" por el número 49, y así sucesivamente.
+
+Con el tiempo, se desarrollaron extensiones del sistema ASCII, como el conjunto ASCII extendido de 8 bits (ASCII extendido o ASCII de 8 bits), que permitió representar caracteres adicionales, incluyendo caracteres especiales, símbolos matemáticos, letras acentuadas, caracteres de otros idiomas y símbolos gráficos.
+
+El conjunto ASCII es ampliamente compatible y se ha convertido en el fundamento de muchos otros conjuntos de caracteres, como ISO-8859-1 (Latin-1), Windows-1252, y otros. Sin embargo, debido a las limitaciones de representación de caracteres adicionales, surgió la necesidad de conjuntos de caracteres más grandes y flexibles, lo que llevó a la creación de sistemas de codificación más avanzados, como Unicode.
+
+Unicode es un sistema de codificación de caracteres más moderno y amplio que permite representar una gran cantidad de caracteres de diferentes idiomas y símbolos en un solo conjunto de caracteres. Unicode ha superado en gran medida las limitaciones del sistema ASCII y se ha convertido en el estándar global para representar texto en computadoras y dispositivos electrónicos.
+
+Aunque Unicode es el estándar predominante en la actualidad, el sistema ASCII aún tiene importancia histórica y es relevante en ciertos contextos, especialmente en el procesamiento de datos heredados y en sistemas informáticos más antiguos que no admiten Unicode de forma nativa.

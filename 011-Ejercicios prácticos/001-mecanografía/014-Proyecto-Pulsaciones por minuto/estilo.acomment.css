@@ -1,0 +1,19 @@
+Los cambios realizados en el archivo CSS incluyen estilos adicionales para los nuevos elementos `<div id="textoescrito"></div>` y `<div id="pulsacionesporminuto"></div>`. A continuación, se explica cada cambio:
+
+1. Se ha agregado el selector `#textoescrito,#pulsacionesporminuto`. Esto significa que los estilos que vienen a continuación se aplicarán tanto al elemento con `id="textoescrito"` como al elemento con `id="pulsacionesporminuto"`.
+
+2. Se han definido los siguientes estilos para los elementos con `id="textoescrito"` y `id="pulsacionesporminuto"`:
+
+   - `width: 720px;`: Ambos elementos tendrán un ancho de 720 píxeles.
+   - `height: 40px;`: Ambos elementos tendrán una altura de 40 píxeles.
+   - `background: white;`: Ambos elementos tendrán un fondo blanco.
+   - `border-radius: 50px;`: Ambos elementos tendrán bordes redondeados con un radio de 50 píxeles, lo que los hace parecer círculos.
+   - `padding: 10px;`: Ambos elementos tendrán un relleno interno de 10 píxeles, lo que crea un espacio entre el contenido y los bordes.
+   - `margin: auto;`: Ambos elementos estarán centrados horizontalmente en su contenedor.
+   - `margin-top: 10px;`: Ambos elementos tendrán un margen superior de 10 píxeles, lo que crea un espacio entre estos elementos y el teclado virtual.
+   - `box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3) inset;`: Ambos elementos tendrán una sombra interna, lo que crea un efecto de profundidad.
+   - `text-align: center;`: El texto dentro de estos elementos estará centrado horizontalmente.
+   - `font-family: monospace;`: Se ha especificado una fuente monoespaciada para el texto dentro de estos elementos, lo que asegura que cada carácter tenga el mismo ancho.
+   - `font-size: 30px;`: Se ha establecido el tamaño de fuente en 30 píxeles para el texto dentro de estos elementos.
+
+Con estos cambios, se han aplicado estilos a los nuevos elementos creados, permitiendo que el texto escrito por el usuario y la cantidad de pulsaciones por minuto se muestren en círculos con una sombra interna, texto centrado y una apariencia coherente en relación con el teclado virtual.

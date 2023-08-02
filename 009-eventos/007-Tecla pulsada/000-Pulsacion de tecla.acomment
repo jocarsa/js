@@ -1,0 +1,39 @@
+El evento "keydown" en JavaScript se dispara cuando el usuario presiona una tecla en el teclado mientras el foco está en un elemento HTML que puede recibir entrada, como un campo de entrada de texto, un área de texto o cualquier otro elemento que pueda capturar la entrada del teclado.
+
+El evento "keydown" se activa cuando se presiona físicamente una tecla y se mantiene presionada antes de soltarla. Esto significa que si el usuario mantiene presionada una tecla, el evento "keydown" se disparará repetidamente hasta que la tecla sea liberada.
+
+Para utilizar el evento "keydown" en JavaScript, se sigue el siguiente proceso:
+
+1. **Seleccionar el elemento:** Selecciona el elemento HTML sobre el que deseas capturar el evento "keydown". Puedes utilizar los métodos de selección del DOM, como `document.getElementById()`, `document.querySelector()`, u otros métodos de selección, para obtener el elemento deseado.
+
+2. **Agregar el manejador de eventos:** Utiliza el método `addEventListener()` para agregar el manejador de eventos "keydown". Este método espera dos argumentos: el nombre del evento, en este caso, "keydown", y la función que se ejecutará cuando ocurra el evento. La función que se proporciona es el manejador del evento, y se ejecutará cada vez que el usuario presione una tecla mientras el elemento seleccionado tenga el foco.
+
+3. **Definir el manejador de eventos:** La función del manejador de eventos es una función JavaScript que define las acciones que se realizarán cuando ocurra el evento "keydown". Puede contener cualquier código válido de JavaScript que realice acciones específicas en respuesta a la tecla presionada por el usuario.
+
+Aquí hay un ejemplo práctico que muestra cómo utilizar el evento "keydown" en un campo de entrada de texto para mostrar un mensaje con el código de la tecla presionada:
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Evento "keydown" en JavaScript</title>
+</head>
+<body>
+  <input type="text" id="miInput" placeholder="Presiona una tecla">
+
+  <script>
+    // Paso 1: Seleccionar el elemento del campo de entrada
+    const miInput = document.getElementById('miInput');
+
+    // Paso 2: Agregar el manejador de eventos "keydown"
+    miInput.addEventListener('keydown', function(event) {
+      // Paso 3: Definir el manejador de eventos
+      const codigoTecla = event.keyCode;
+      alert('Presionaste la tecla con código: ' + codigoTecla);
+    });
+  </script>
+</body>
+</html>
+```
+
+En este ejemplo, cuando el usuario presiona una tecla en el campo de entrada de texto, se muestra un cuadro de alerta que muestra el mensaje "Presionaste la tecla con código: [código de tecla]". El evento "keydown" permite realizar acciones específicas en respuesta a las teclas presionadas por el usuario mientras el foco está en un elemento HTML que puede recibir entrada del teclado.

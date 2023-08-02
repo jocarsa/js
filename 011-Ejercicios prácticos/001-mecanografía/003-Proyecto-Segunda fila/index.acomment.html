@@ -1,0 +1,30 @@
+En el archivo HTML anterior, se han realizado los siguientes cambios:
+
+1. Se ha agregado una nueva fila de teclas:
+   ```
+   <div class="fila" id="fila2">
+   ```
+   Se ha creado un nuevo contenedor `<div>` con la clase "fila" y el atributo `id="fila2"`. Esta nueva fila contiene una serie de teclas adicionales que forman parte del teclado virtual.
+
+2. Se han agregado teclas adicionales en la segunda fila:
+   ```
+   <div class="tecla" id="A">A</div>
+   <div class="tecla" id="S">S</div>
+   <div class="tecla" id="D">D</div>
+   <div class="tecla" id="F">F</div>
+   <div class="tecla" id="G">G</div>
+   <div class="tecla" id="H">H</div>
+   <div class="tecla" id="J">J</div>
+   <div class="tecla" id="K">K</div>
+   <div class="tecla" id="L">L</div>
+   <div class="tecla" id="Ñ">Ñ</div>
+   ```
+   Estas líneas añaden teclas adicionales con diferentes letras del alfabeto en la segunda fila del teclado virtual. Cada tecla tiene una clase "tecla" y un atributo `id` específico para identificarla. Además, el contenido de cada tecla corresponde a la letra que representa.
+
+3. Se ha agregado `<div class="clearfix"></div>` al final de cada fila:
+   ```
+   <div class="clearfix"></div>
+   ```
+   Se ha añadido un elemento `<div>` con la clase "clearfix" después de cada fila de teclas. Este elemento se utiliza para limpiar el flujo de elementos flotantes dentro del contenedor "teclado". Al flotar las teclas a la izquierda (como se ha hecho en el archivo CSS), pueden surgir problemas de diseño si se incluyen elementos que no flotan dentro del mismo contenedor. El uso de la clase "clearfix" permite que el contenedor "teclado" se ajuste correctamente a la altura de las teclas flotantes y asegura que las filas de teclas se muestren correctamente una debajo de la otra.
+
+Con estos cambios, el teclado virtual ahora muestra dos filas de teclas, cada una con un conjunto de letras del alfabeto. Las teclas flotan a la izquierda dentro de su fila correspondiente, y el diseño está definido por el archivo CSS externo ("estilo.css") enlazado en la cabecera del documento HTML.

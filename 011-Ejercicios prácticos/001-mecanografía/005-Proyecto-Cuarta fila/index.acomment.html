@@ -1,0 +1,32 @@
+En el archivo HTML anterior, se han realizado los siguientes cambios:
+
+1. Se ha agregado una nueva fila de teclas:
+   ```
+   <div class="fila" id="fila4">
+   ```
+   Se ha creado un nuevo contenedor `<div>` con la clase "fila" y el atributo `id="fila4"`. Esta cuarta fila contiene elementos vacíos y un "espaciador" para completar el teclado virtual.
+
+2. Se han agregado elementos vacíos en la cuarta fila:
+   ```
+   <div class="tecla" id=""></div>
+   <div class="tecla" id=""></div>
+   <div class="tecla" id="espaciador"></div>
+   <div class="tecla" id=""></div>
+   <div class="tecla" id=""></div>
+   <div class="tecla" id=""></div>
+   ```
+   En esta fila, se han agregado seis elementos con la clase "tecla". Sin embargo, estos elementos no tienen ningún contenido visible porque el contenido dentro de las teclas está vacío. Se han creado para mantener la estructura del teclado virtual y mantener un diseño consistente en todas las filas.
+
+3. Se ha agregado un elemento especial de "espaciador":
+   ```
+   <div class="tecla" id="espaciador"></div>
+   ```
+   Este elemento también tiene la clase "tecla", pero tiene un `id="espaciador"`. Su propósito es actuar como un espacio en blanco entre las teclas con contenido en la fila 3 y las teclas vacías en la fila 4. El `id="espaciador"` puede ser utilizado en el archivo CSS para aplicar estilos específicos a este elemento si es necesario.
+
+4. Se ha agregado `<div class="clearfix"></div>` al final de la cuarta fila:
+   ```
+   <div class="clearfix"></div>
+   ```
+   Al igual que en las filas anteriores, se ha añadido un elemento `<div>` con la clase "clearfix" después de la cuarta fila de teclas. Esto asegura que el contenedor "teclado" se ajuste correctamente a la altura de todas las filas de teclas y evita problemas de diseño relacionados con elementos flotantes.
+
+Con estos cambios, el teclado virtual ahora muestra cuatro filas de teclas, cada una con diferentes letras, caracteres y elementos vacíos. El diseño y el aspecto visual del teclado están definidos por el archivo CSS externo ("estilo.css") enlazado en la cabecera del documento HTML, que establece los estilos para las teclas individuales y el contenedor "teclado".

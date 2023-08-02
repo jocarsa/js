@@ -1,0 +1,41 @@
+El evento "keypress" en JavaScript se dispara cuando el usuario presiona y mantiene presionada una tecla en el teclado que representa un carácter imprimible. Este evento se activa repetidamente mientras el usuario mantiene presionada la tecla y también genera un solo evento cuando la tecla se libera.
+
+A diferencia del evento "keydown", que se dispara repetidamente mientras la tecla está presionada, el evento "keypress" solo se dispara una vez cuando la tecla se mantiene presionada y luego se repite en intervalos mientras la tecla sigue presionada.
+
+El evento "keypress" es útil para capturar la entrada de texto en campos de entrada y áreas de texto, ya que se activa para las teclas que generan caracteres imprimibles en lugar de teclas como "Shift", "Ctrl" o "Alt" que no representan caracteres visibles.
+
+Para utilizar el evento "keypress" en JavaScript, se sigue el mismo proceso que para otros eventos:
+
+1. **Seleccionar el elemento:** Selecciona el elemento HTML sobre el que deseas capturar el evento "keypress". Utiliza los métodos de selección del DOM, como `document.getElementById()`, `document.querySelector()`, u otros métodos de selección, para obtener el elemento deseado.
+
+2. **Agregar el manejador de eventos:** Utiliza el método `addEventListener()` para agregar el manejador de eventos "keypress". Este método espera dos argumentos: el nombre del evento, en este caso, "keypress", y la función que se ejecutará cuando ocurra el evento. La función que se proporciona es el manejador del evento y se ejecutará cuando el usuario presione una tecla que representa un carácter imprimible.
+
+3. **Definir el manejador de eventos:** La función del manejador de eventos es una función JavaScript que define las acciones que se realizarán cuando ocurra el evento "keypress". Puede contener cualquier código válido de JavaScript que realice acciones específicas en respuesta a la tecla presionada.
+
+Aquí hay un ejemplo práctico que muestra cómo utilizar el evento "keypress" en un campo de entrada de texto para mostrar el carácter presionado por el usuario:
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Evento "keypress" en JavaScript</title>
+</head>
+<body>
+  <input type="text" id="miInput" placeholder="Presiona y mantén presionada una tecla">
+
+  <script>
+    // Paso 1: Seleccionar el elemento del campo de entrada
+    const miInput = document.getElementById('miInput');
+
+    // Paso 2: Agregar el manejador de eventos "keypress"
+    miInput.addEventListener('keypress', function(event) {
+      // Paso 3: Definir el manejador de eventos
+      const charPresionado = event.key;
+      alert('Presionaste la tecla: ' + charPresionado);
+    });
+  </script>
+</body>
+</html>
+```
+
+En este ejemplo, cuando el usuario presiona y mantiene presionada una tecla en el campo de entrada de texto, se muestra un cuadro de alerta que muestra el mensaje "Presionaste la tecla: [carácter presionado]". El evento "keypress" permite capturar la entrada de texto y realizar acciones específicas en respuesta a las teclas que generan caracteres imprimibles.

@@ -1,0 +1,39 @@
+El evento "keyup" en JavaScript se dispara cuando el usuario suelta una tecla en el teclado después de haberla presionado. Es decir, ocurre cuando el usuario libera una tecla que había sido previamente presionada.
+
+A diferencia del evento "keydown" que se activa cuando el usuario presiona físicamente una tecla, el evento "keyup" se dispara cuando el usuario levanta el dedo o deja de presionar la tecla.
+
+Para utilizar el evento "keyup" en JavaScript, se sigue el mismo proceso que para otros eventos:
+
+1. **Seleccionar el elemento:** Selecciona el elemento HTML sobre el que deseas capturar el evento "keyup". Utiliza los métodos de selección del DOM, como `document.getElementById()`, `document.querySelector()`, u otros métodos de selección, para obtener el elemento deseado.
+
+2. **Agregar el manejador de eventos:** Utiliza el método `addEventListener()` para agregar el manejador de eventos "keyup". Este método espera dos argumentos: el nombre del evento, en este caso, "keyup", y la función que se ejecutará cuando ocurra el evento. La función que se proporciona es el manejador del evento y se ejecutará cada vez que el usuario suelte una tecla en el elemento seleccionado.
+
+3. **Definir el manejador de eventos:** La función del manejador de eventos es una función JavaScript que define las acciones que se realizarán cuando ocurra el evento "keyup". Puede contener cualquier código válido de JavaScript que realice acciones específicas en respuesta a la tecla liberada por el usuario.
+
+Aquí hay un ejemplo práctico que muestra cómo utilizar el evento "keyup" en un campo de entrada de texto para mostrar un mensaje con el código de la tecla liberada:
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Evento "keyup" en JavaScript</title>
+</head>
+<body>
+  <input type="text" id="miInput" placeholder="Presiona y suelta una tecla">
+
+  <script>
+    // Paso 1: Seleccionar el elemento del campo de entrada
+    const miInput = document.getElementById('miInput');
+
+    // Paso 2: Agregar el manejador de eventos "keyup"
+    miInput.addEventListener('keyup', function(event) {
+      // Paso 3: Definir el manejador de eventos
+      const codigoTecla = event.keyCode;
+      alert('Soltaste la tecla con código: ' + codigoTecla);
+    });
+  </script>
+</body>
+</html>
+```
+
+En este ejemplo, cuando el usuario presiona y luego suelta una tecla en el campo de entrada de texto, se muestra un cuadro de alerta que muestra el mensaje "Soltaste la tecla con código: [código de tecla]". El evento "keyup" permite realizar acciones específicas en respuesta a las teclas liberadas por el usuario después de haber sido presionadas.

@@ -1,0 +1,31 @@
+En esta parte del código JavaScript, se crea un lienzo (canvas) en el documento HTML y se dibuja un rectángulo utilizando el contexto 2D del lienzo. Veamos en detalle cómo funciona:
+
+```html
+<!doctype html>
+<html lang="es">
+<head>
+    <title>Javascript</title>
+    <meta charset="utf-8">
+    <style>
+        #lienzo { border: 1px solid grey; }
+    </style>
+</head>
+<body>
+    <canvas id="lienzo" width="512" height="512"></canvas>
+    <script>
+        var contexto = document.getElementById("lienzo").getContext("2d");
+        contexto.fillRect(20, 20, 40, 40);
+    </script>
+</body>
+</html>
+```
+
+1. `<canvas id="lienzo" width="512" height="512"></canvas>`: En esta línea, se crea un elemento de lienzo (canvas) en el documento HTML con un ancho de `512` píxeles y una altura de `512` píxeles. El atributo `id` del lienzo se establece como `"lienzo"`.
+
+2. `var contexto = document.getElementById("lienzo").getContext("2d");`: En esta línea, se obtiene el contexto 2D del lienzo utilizando el método `getContext("2d")`. El contexto 2D proporciona una interfaz para dibujar en el lienzo. El objeto `contexto` se utiliza para realizar operaciones de dibujo en el lienzo.
+
+3. `contexto.fillRect(20, 20, 40, 40);`: Esta línea utiliza el método `fillRect(x, y, width, height)` del contexto 2D para dibujar un rectángulo relleno en el lienzo. Los argumentos `x` e `y` especifican las coordenadas del punto superior izquierdo del rectángulo, y los argumentos `width` y `height` especifican el ancho y la altura del rectángulo respectivamente.
+
+   En este caso, el rectángulo se dibuja en las coordenadas `(20, 20)` del lienzo y tiene un ancho de `40` píxeles y una altura de `40` píxeles. Por lo tanto, se dibujará un rectángulo relleno en la posición `(20, 20)` con un tamaño de `40x40` píxeles.
+
+El resultado será un lienzo con un borde gris que contiene un rectángulo relleno en la posición `(20, 20)` con un tamaño de `40x40` píxeles. El color de relleno del rectángulo dependerá del contexto de dibujo predeterminado, que suele ser negro a menos que se especifique lo contrario. Si se desea cambiar el color de relleno u otros atributos de dibujo, se pueden utilizar los métodos y propiedades proporcionados por el objeto de contexto 2D (`contexto`).

@@ -1,0 +1,51 @@
+`querySelector` es un método en JavaScript que permite seleccionar elementos del DOM (Document Object Model) utilizando selectores CSS. Es una forma más versátil y poderosa de seleccionar elementos en comparación con otros métodos de selección, como `getElementById`, `getElementsByClassName`, y `getElementsByTagName`.
+
+El método `querySelector` busca y devuelve el primer elemento que coincide con el selector especificado. Si hay varios elementos que cumplen con el selector, solo se seleccionará el primero encontrado. Si no se encuentra ningún elemento que cumpla con el selector, el método devolverá `null`.
+
+El selector CSS que se utiliza en `querySelector` puede ser cualquier selector válido que se usaría en CSS para seleccionar elementos. Por ejemplo, puedes seleccionar elementos por su ID, su clase, su nombre de etiqueta o incluso por relaciones entre elementos (como elementos descendientes, hijos, etc.).
+
+El formato general para utilizar `querySelector` es el siguiente:
+
+```javascript
+const elemento = document.querySelector(selector);
+```
+
+Donde `selector` es una cadena que representa el selector CSS que quieres utilizar para seleccionar el elemento.
+
+Aquí hay algunos ejemplos prácticos de cómo se puede usar `querySelector`:
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+  <title>querySelector en JavaScript</title>
+</head>
+<body>
+  <div id="miDiv">Este es un div con ID</div>
+  <p class="miParrafo">Este es un párrafo con clase</p>
+  <p>Este es otro párrafo</p>
+
+  <script>
+    // Seleccionar un elemento por su ID
+    const divElemento = document.querySelector('#miDiv');
+    console.log(divElemento.textContent); // Salida: "Este es un div con ID"
+
+    // Seleccionar un elemento por su clase
+    const parrafoElemento = document.querySelector('.miParrafo');
+    console.log(parrafoElemento.textContent); // Salida: "Este es un párrafo con clase"
+
+    // Seleccionar el primer párrafo en el documento
+    const primerParrafo = document.querySelector('p');
+    console.log(primerParrafo.textContent); // Salida: "Este es otro párrafo"
+  </script>
+</body>
+</html>
+```
+
+En el primer ejemplo, utilizamos `querySelector` para seleccionar el elemento con el ID "miDiv" y almacenamos la referencia en la variable `divElemento`. Luego, accedemos al contenido de texto del div utilizando `textContent`.
+
+En el segundo ejemplo, utilizamos `querySelector` para seleccionar el primer elemento con la clase "miParrafo" y almacenamos la referencia en la variable `parrafoElemento`. Nuevamente, accedemos al contenido de texto del párrafo utilizando `textContent`.
+
+En el tercer ejemplo, utilizamos `querySelector` para seleccionar el primer párrafo (`<p>`) en el documento y almacenamos la referencia en la variable `primerParrafo`. Luego, accedemos al contenido de texto del párrafo utilizando `textContent`.
+
+`querySelector` es una herramienta poderosa para seleccionar elementos en el DOM, ya que permite utilizar selectores CSS para realizar selecciones más específicas y complejas. Es compatible con la mayoría de los navegadores modernos y es muy útil en el desarrollo web para manipular y trabajar con elementos de manera eficiente.

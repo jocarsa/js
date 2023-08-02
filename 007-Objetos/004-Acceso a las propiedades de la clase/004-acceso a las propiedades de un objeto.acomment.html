@@ -1,0 +1,48 @@
+En esta parte del código JavaScript, se define una clase llamada `Gato` con un constructor que inicializa dos propiedades: `nombre` y `edad`. Luego, se crean dos objetos (instancias) de la clase `Gato`, se accede y se modifica la propiedad `edad` de uno de los objetos. Veamos en detalle cómo funciona:
+
+```html
+<!doctype html>
+<html lang="es">
+<head>
+    <title>Javascript</title>
+    <meta charset="utf-8">
+</head>
+<body>
+    <script>
+        class Gato {
+            constructor() {
+                this.nombre; // Propiedad nombre
+                this.edad = 0; // Propiedad edad con valor inicial 0
+            }
+        }
+
+        var Micifu = new Gato(); // Crear una nueva instancia de Gato y asignarla a Micifu
+        var Michino = new Gato(); // Crear otra nueva instancia de Gato y asignarla a Michino
+
+        console.log(Micifu.edad); // Mostrar en la consola la edad de Micifu (0)
+        Micifu.edad++; // Incrementar en 1 la edad de Micifu
+        console.log(Micifu.edad); // Mostrar en la consola la nueva edad de Micifu (1)
+    </script>
+</body>
+</html>
+```
+
+1. `class Gato { ... }`: Esto define una clase llamada `Gato`, que actúa como una plantilla para crear objetos que representan gatos. El constructor de la clase inicializa dos propiedades, `nombre` y `edad`, usando `this`.
+
+2. `constructor() { ... }`: El `constructor` es un método especial en una clase que se llama automáticamente cuando se crea una nueva instancia del objeto. En este caso, el constructor inicializa las propiedades `nombre` y `edad` del objeto creado.
+
+3. `this.nombre;`: Dentro del constructor, se utiliza `this` para referirse a la instancia (objeto) que se está creando. Con `this.nombre`, se inicializa la propiedad `nombre` de la instancia. Sin embargo, en este caso, no se proporciona ningún valor inicial para `nombre`, por lo que su valor será `undefined`.
+
+4. `this.edad = 0;`: También dentro del constructor, se utiliza `this` para inicializar la propiedad `edad` de la instancia con un valor de `0`.
+
+5. `var Micifu = new Gato();`: Esta línea crea una nueva instancia (objeto) de la clase `Gato` utilizando el operador `new` y la asigna a la variable `Micifu`.
+
+6. `var Michino = new Gato();`: Esta línea también crea otra nueva instancia (objeto) de la clase `Gato` utilizando el operador `new` y la asigna a la variable `Michino`.
+
+7. `console.log(Micifu.edad);`: Aquí se utiliza `console.log()` para mostrar la propiedad `edad` del objeto `Micifu` en la consola del navegador. Dado que la propiedad `edad` se inicializó con el valor `0`, se imprimirá `0` en la consola.
+
+8. `Micifu.edad++;`: En esta línea, se accede a la propiedad `edad` del objeto `Micifu` y se incrementa en 1 utilizando el operador de incremento `++`. Ahora, la propiedad `edad` de `Micifu` es `1`.
+
+9. `console.log(Micifu.edad);`: Por último, se vuelve a utilizar `console.log()` para mostrar la propiedad `edad` actualizada de `Micifu` en la consola. Dado que se incrementó previamente en 1, se imprimirá `1`.
+
+En resumen, en la parte JavaScript de este código, se define una clase `Gato` con un constructor que inicializa las propiedades `nombre` y `edad`. Luego se crean dos objetos `Micifu` y `Michino` a partir de esta clase. Se muestra la propiedad `edad` de `Micifu` en la consola, se incrementa su valor en 1 y se muestra nuevamente para mostrar el resultado actualizado.

@@ -1,0 +1,38 @@
+El evento "blur" en JavaScript se dispara cuando un elemento HTML pierde el foco o deja de estar enfocado. En otras palabras, ocurre cuando el usuario cambia el enfoque de un elemento a otro, por ejemplo, haciendo clic en otro elemento, presionando la tecla "Tab" para cambiar el foco o interactuando con un elemento diferente.
+
+Cuando un elemento pierde el foco, generalmente se desmarca o deja de mostrar su apariencia resaltada, lo que indica que ya no está listo para recibir la entrada del usuario.
+
+Para utilizar el evento "blur" en JavaScript, se sigue el siguiente proceso:
+
+1. **Seleccionar el elemento:** Selecciona el elemento HTML al que deseas asociar el evento. Puedes utilizar los métodos de selección del DOM, como `document.getElementById()`, `document.querySelector()`, u otros métodos de selección, para obtener el elemento deseado.
+
+2. **Agregar el manejador de eventos:** Utiliza el método `addEventListener()` para agregar el manejador de eventos "blur". Este método espera dos argumentos: el nombre del evento, en este caso, "blur", y la función que se ejecutará cuando ocurra el evento. La función que se proporciona es el manejador del evento, y se ejecutará cada vez que el elemento seleccionado pierda el foco.
+
+3. **Definir el manejador de eventos:** La función del manejador de eventos es una función JavaScript que define las acciones que se realizarán cuando ocurra el evento "blur". Puede contener cualquier código válido de JavaScript que realice acciones específicas en respuesta a que el elemento pierda el foco.
+
+Aquí hay un ejemplo práctico que muestra cómo utilizar el evento "blur" en un campo de entrada de texto para mostrar un mensaje cuando pierde el foco:
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Evento "blur" en JavaScript</title>
+</head>
+<body>
+  <input type="text" id="miInput" placeholder="Haz clic aquí">
+
+  <script>
+    // Paso 1: Seleccionar el elemento del campo de entrada
+    const miInput = document.getElementById('miInput');
+
+    // Paso 2: Agregar el manejador de eventos "blur"
+    miInput.addEventListener('blur', function() {
+      // Paso 3: Definir el manejador de eventos
+      alert('El campo de entrada ha perdido el foco');
+    });
+  </script>
+</body>
+</html>
+```
+
+En este ejemplo, cuando el usuario hace clic en el campo de entrada de texto y luego hace clic en otro lugar fuera de él, se muestra un cuadro de alerta que muestra el mensaje "El campo de entrada ha perdido el foco". De esta manera, el evento "blur" permite realizar acciones específicas cuando un elemento HTML pierde el foco y ya no está listo para recibir la entrada del usuario.

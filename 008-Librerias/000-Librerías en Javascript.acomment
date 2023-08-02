@@ -1,0 +1,15 @@
+JavaScript proporciona una librería matemática integrada que incluye un conjunto de funciones y constantes matemáticas que permiten realizar operaciones matemáticas comunes. Esta librería se basa en el objeto global `Math`, que proporciona funcionalidades para realizar cálculos matemáticos sin necesidad de importar bibliotecas externas. A continuación, se explican algunas de las funciones y constantes más útiles de la librería matemática en JavaScript:
+
+1. Funciones trigonométricas: La librería matemática incluye funciones trigonométricas como `Math.sin()`, `Math.cos()`, `Math.tan()`, `Math.asin()`, `Math.acos()` y `Math.atan()`, que permiten calcular el seno, coseno, tangente, arco seno, arco coseno y arco tangente de un ángulo, respectivamente. Estas funciones trabajan con valores en radianes.
+
+2. Funciones exponenciales y logarítmicas: La librería incluye funciones para cálculos exponenciales y logarítmicos, como `Math.exp()`, `Math.log()`, `Math.log10()` y `Math.pow()`. Estas funciones permiten calcular la exponencial de un número, el logaritmo natural de un número, el logaritmo en base 10 de un número y la potencia de un número elevado a otro número, respectivamente.
+
+3. Funciones de redondeo: La librería proporciona funciones para redondear números, como `Math.round()`, `Math.floor()` y `Math.ceil()`. Estas funciones permiten redondear un número al entero más cercano, obtener el entero más cercano menor o igual a un número y obtener el entero más cercano mayor o igual a un número, respectivamente.
+
+4. Constantes matemáticas: La librería matemática también incluye algunas constantes matemáticas predefinidas, como `Math.PI`, que representa el valor de π (pi), y `Math.E`, que representa el número de Euler (aproximadamente 2.71828).
+
+5. Generación de números aleatorios: La librería proporciona la función `Math.random()` que devuelve un número decimal aleatorio entre 0 (inclusive) y 1 (exclusive), lo que permite generar números aleatorios para diversas aplicaciones.
+
+6. Otras funciones matemáticas: Además de las funciones mencionadas anteriormente, la librería matemática también incluye funciones para calcular valores absolutos (`Math.abs()`), obtener el máximo y mínimo de un conjunto de números (`Math.max()` y `Math.min()`), convertir radianes a grados (`Math.degrees()`) y grados a radianes (`Math.radians()`), entre otras.
+
+La librería matemática en JavaScript es una herramienta poderosa para realizar cálculos matemáticos en aplicaciones web y proporciona un conjunto completo de funciones y constantes que facilitan las operaciones matemáticas comunes. Es importante tener en cuenta que, debido a la naturaleza de los números de punto flotante en JavaScript, pueden surgir algunas imprecisiones en ciertas operaciones matemáticas. En tales casos, es posible que sea necesario utilizar bibliotecas matemáticas externas más avanzadas y precisas para aplicaciones críticas o complejas.

@@ -1,0 +1,43 @@
+En JavaScript, cuando se trabaja con eventos de teclado, es posible acceder a información sobre las teclas presionadas y liberadas. Cada tecla tiene un código numérico único asociado que identifica la tecla específica. Estos códigos de tecla son valores numéricos y se pueden utilizar para detectar qué tecla ha sido presionada o liberada en un evento de teclado. Algunos de los códigos de tecla más comunes son los siguientes:
+
+1. `event.keyCode`: Antiguamente, este era el atributo más utilizado para obtener el código de tecla en eventos de teclado. Sin embargo, actualmente se recomienda utilizar el atributo `event.key` debido a que proporciona una representación más consistente y amigable con respecto a los nombres de las teclas.
+
+2. `event.key`: Es el atributo moderno y preferido para obtener el código de tecla en eventos de teclado. Proporciona una representación más consistente y legible en comparación con `event.keyCode`. Este atributo devuelve una cadena que representa el nombre de la tecla presionada o liberada, como "Enter", "Backspace", "ArrowUp", "a", "b", "1", etc.
+
+3. Códigos numéricos para teclas especiales: Algunas teclas especiales tienen códigos numéricos específicos asignados. Por ejemplo:
+   - `Enter`: `event.key` es `"Enter"` y `event.keyCode` es `13`.
+   - `Backspace`: `event.key` es `"Backspace"` y `event.keyCode` es `8`.
+   - `ArrowUp`: `event.key` es `"ArrowUp"` y `event.keyCode` es `38`.
+   - `ArrowDown`: `event.key` es `"ArrowDown"` y `event.keyCode` es `40`.
+   - `ArrowLeft`: `event.key` es `"ArrowLeft"` y `event.keyCode` es `37`.
+   - `ArrowRight`: `event.key` es `"ArrowRight"` y `event.keyCode` es `39`.
+
+4. Códigos numéricos para teclas alfanuméricas: Las teclas alfanuméricas devuelven códigos numéricos correspondientes a los códigos ASCII de los caracteres asociados. Por ejemplo:
+   - `a`: `event.key` y `event.keyCode` es `65`.
+   - `b`: `event.key` y `event.keyCode` es `66`.
+   - `A`: `event.key` y `event.keyCode` es `65`.
+   - `B`: `event.key` y `event.keyCode` es `66`.
+
+Es importante tener en cuenta que algunos navegadores más antiguos pueden no admitir todos los valores de `event.key` o `event.keyCode` de manera uniforme. Por lo tanto, se recomienda realizar pruebas y verificar la compatibilidad en los navegadores objetivo.
+
+Aquí tienes un ejemplo práctico para mostrar los códigos de tecla en la consola cuando se presiona una tecla:
+
+```html
+<!doctype html>
+<html lang="es">
+<head>
+    <title>Javascript</title>
+    <meta charset="utf-8">
+</head>
+<body>
+    <script>
+        document.addEventListener("keydown", function(event) {
+            console.log("Tecla presionada: ", event.key);
+            console.log("Código de tecla: ", event.keyCode);
+        });
+    </script>
+</body>
+</html>
+```
+
+En este ejemplo, cada vez que presiones una tecla, se mostrará el nombre de la tecla y su código en la consola del navegador.

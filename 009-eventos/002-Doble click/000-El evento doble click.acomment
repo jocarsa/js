@@ -1,0 +1,36 @@
+El evento "dblclick" (doble clic) en JavaScript es un evento que se dispara cuando el usuario hace doble clic en un elemento HTML utilizando el mouse u otro dispositivo de entrada compatible. Este evento es similar al evento "click", pero requiere que el usuario realice dos clics rápidos en sucesión en el mismo elemento.
+
+Para utilizar el evento "dblclick" en JavaScript, se sigue un proceso similar al evento "click":
+
+1. **Seleccionar el elemento:** Selecciona el elemento HTML al que deseas asociar el evento "dblclick". Esto se puede hacer utilizando los métodos de selección del DOM, como `document.getElementById()`, `document.querySelector()`, u otros métodos de selección.
+
+2. **Agregar el manejador de eventos:** Utiliza el método `addEventListener()` para agregar el manejador de eventos "dblclick". Este método espera dos argumentos: el nombre del evento, en este caso, "dblclick", y la función que se ejecutará cuando ocurra el evento. La función que se proporciona es el manejador del evento, y se ejecutará cada vez que el usuario haga doble clic en el elemento seleccionado.
+
+3. **Definir el manejador de eventos:** La función del manejador de eventos es una función JavaScript que define las acciones que se realizarán cuando ocurra el evento "dblclick". Al igual que con el evento "click", puede contener cualquier código válido de JavaScript que realice acciones específicas en respuesta al doble clic del usuario.
+
+Aquí hay un ejemplo práctico que muestra cómo utilizar el evento "dblclick" en un botón para mostrar un mensaje cuando se hace doble clic en él:
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Evento "dblclick" en JavaScript</title>
+</head>
+<body>
+  <button id="miBoton">Haz doble clic aquí</button>
+
+  <script>
+    // Paso 1: Seleccionar el elemento botón por su ID
+    const miBoton = document.getElementById('miBoton');
+
+    // Paso 2: Agregar el manejador de eventos "dblclick"
+    miBoton.addEventListener('dblclick', function() {
+      // Paso 3: Definir el manejador de eventos
+      alert('¡Haz hecho doble clic en el botón!');
+    });
+  </script>
+</body>
+</html>
+```
+
+En este ejemplo, cuando el usuario hace doble clic en el botón con el texto "Haz doble clic aquí", se muestra un cuadro de alerta que muestra el mensaje "¡Haz hecho doble clic en el botón!". De esta manera, el evento "dblclick" permite realizar acciones específicas cuando el usuario realiza doble clic en un elemento.

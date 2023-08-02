@@ -1,0 +1,55 @@
+En el archivo CSS anterior, se han realizado los siguientes cambios:
+
+1. Se ha agregado una regla para el selector `html`:
+   ```
+   html{
+       background:grey;
+   }
+   ```
+   Esta regla establece un color de fondo gris para todo el documento HTML. Ahora, la página tendrá un fondo gris en lugar del fondo predeterminado.
+
+2. Se han realizado cambios en la regla del selector `#teclado`:
+   ```
+   #teclado{
+       border:1px solid grey;
+       width:700px;
+       margin:auto;
+       background:white;
+       padding:20px;
+       border-radius:10px;
+       box-shadow:0px 10px 20px rgba(0,0,0,0.3);
+   }
+   ```
+   - Se ha establecido un ancho de 700 píxeles para el contenedor "teclado".
+   - Se ha añadido `margin: auto;` para centrar horizontalmente el contenedor "teclado" en la página.
+   - Se ha definido un fondo blanco para el contenedor "teclado".
+   - Se ha agregado un relleno de 20 píxeles alrededor del contenido del contenedor "teclado".
+   - Se ha aplicado un radio de borde de 10 píxeles, lo que agrega esquinas redondeadas al contenedor "teclado".
+   - Se ha aplicado una sombra a todo el contenedor "teclado" con un desplazamiento de 0 píxeles en el eje X, 10 píxeles en el eje Y y 20 píxeles de desenfoque. El color de la sombra se establece en gris con una opacidad del 30%, lo que crea un efecto de sombra suave en el contenedor.
+
+3. Se ha añadido una nueva regla para el selector `#espaciador`:
+   ```
+   #espaciador{
+       width:300px;
+   }
+   ```
+   Esta regla establece un ancho de 300 píxeles para el "espaciador". Ahora, este elemento tendrá un ancho específico de 300 píxeles, lo que lo hace más ancho que las teclas individuales en el teclado virtual.
+
+4. Se han realizado algunos cambios en la regla del selector `.tecla`:
+   ```
+   .tecla{
+       width:50px;
+       height:50px;
+       border:1px solid grey;
+       font-family: monospace;
+       margin:5px;
+       border-radius:5px;
+       text-align:center;
+       font-size:40px;
+       float:left;
+       border-bottom:4px solid grey;
+   }
+   ```
+   - Se ha añadido `border-bottom: 4px solid grey;`, lo que agrega un borde inferior de 4 píxeles con un color gris oscuro a cada tecla. Esto crea una apariencia visual distinta para las teclas individuales.
+
+Con estos cambios, el archivo CSS ha personalizado aún más el estilo del teclado virtual. Se han añadido colores de fondo, sombras, bordes y tamaños para mejorar el diseño general de la página. Los estilos para las teclas individuales, el contenedor "teclado" y el "espaciador" se han ajustado para lograr un aspecto más cohesivo y atractivo.

@@ -1,0 +1,52 @@
+En esta parte del código JavaScript, se utilizan diversas propiedades y métodos del objeto `Date` para obtener información sobre la fecha y hora actual. Veamos en detalle cómo funciona:
+
+```html
+<!doctype html>
+<html lang="es">
+<head>
+    <title>Javascript</title>
+    <meta charset="utf-8">
+</head>
+<body>
+    <script>
+        var Fecha = new Date(); // Crear un objeto Date que representa la fecha y hora actual
+
+        console.log(Fecha); // Mostrar en la consola el objeto Fecha completo
+
+        console.log(1900 + Fecha.getYear()); // Obtener el año (desfasado) y sumar 1900 para obtener el año actual
+
+        console.log(Fecha.getFullYear()); // Obtener el año completo (actual) de la fecha
+
+        console.log(Fecha.getDate()); // Obtener el día del mes de la fecha (número del 1 al 31)
+
+        console.log(Fecha.getMonth() + 1); // Obtener el mes de la fecha (número del 0 al 11) y sumar 1 para obtener el mes actual (del 1 al 12)
+
+        console.log(Fecha.getHours()); // Obtener las horas de la fecha (número del 0 al 23)
+
+        console.log(Fecha.getMinutes()); // Obtener los minutos de la fecha (número del 0 al 59)
+
+        console.log(Fecha.getSeconds()); // Obtener los segundos de la fecha (número del 0 al 59)
+    </script>
+</body>
+</html>
+```
+
+1. `var Fecha = new Date();`: Esta línea crea un nuevo objeto `Date` que representa la fecha y hora actual del sistema. El objeto `Fecha` contendrá la fecha y hora exacta en el momento en que se ejecuta esta línea.
+
+2. `console.log(Fecha);`: Aquí se utiliza `console.log()` para mostrar el objeto `Fecha` completo en la consola del navegador. El objeto `Date` contiene información sobre la fecha, hora, minutos, segundos, milisegundos, etc., en formato de texto legible.
+
+3. `console.log(1900 + Fecha.getYear());`: La función `getYear()` devuelve el año actual, pero desfasado en relación con el año real. Para obtener el año completo actual, se suma 1900 al resultado de `getYear()`. Sin embargo, el método `getYear()` se considera obsoleto, y se recomienda utilizar `getFullYear()` en su lugar.
+
+4. `console.log(Fecha.getFullYear());`: El método `getFullYear()` devuelve el año actual completo de la fecha, proporcionando el resultado correcto sin la necesidad de sumar 1900.
+
+5. `console.log(Fecha.getDate());`: El método `getDate()` devuelve el día del mes de la fecha como un número entero del 1 al 31, indicando el día actual.
+
+6. `console.log(Fecha.getMonth() + 1);`: El método `getMonth()` devuelve el mes actual como un número del 0 al 11 (0 representa enero, 1 febrero y así sucesivamente). Para obtener el mes actual en formato del 1 al 12, se suma 1 al resultado de `getMonth()`.
+
+7. `console.log(Fecha.getHours());`: El método `getHours()` devuelve las horas de la fecha como un número del 0 al 23, representando las horas actuales.
+
+8. `console.log(Fecha.getMinutes());`: El método `getMinutes()` devuelve los minutos de la fecha como un número del 0 al 59, representando los minutos actuales.
+
+9. `console.log(Fecha.getSeconds());`: El método `getSeconds()` devuelve los segundos de la fecha como un número del 0 al 59, representando los segundos actuales.
+
+En resumen, en la parte JavaScript de este código, se crea un objeto `Date` para obtener la fecha y hora actual y luego se utilizan varios métodos de este objeto para obtener información específica sobre la fecha, como el año, mes, día, hora, minutos y segundos. La información se muestra en la consola del navegador utilizando `console.log()`.

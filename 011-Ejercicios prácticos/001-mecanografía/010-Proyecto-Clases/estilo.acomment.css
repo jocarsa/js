@@ -1,0 +1,7 @@
+En el archivo CSS anterior, se han realizado los siguientes cambios:
+
+1. Se ha añadido una nueva regla CSS para el selector `.teclacorrecta`. Esta regla se utiliza para aplicar un estilo específico a las teclas del teclado virtual cuando se pulsan correctamente (cuando se mantiene presionada la tecla en el teclado físico). El estilo aplicado es un fondo verde, indicando que la tecla ha sido presionada correctamente.
+
+2. Se ha añadido otra nueva regla CSS para el selector `.teclaincorrecta`. Esta regla se utiliza para aplicar un estilo específico a las teclas del teclado virtual cuando se pulsan incorrectamente (cuando se mantiene presionada una tecla que no corresponde a ninguna tecla en el teclado virtual). El estilo aplicado es un fondo rojo, indicando que la tecla ha sido presionada incorrectamente.
+
+Estos cambios permiten que el JavaScript pueda agregar o eliminar la clase `teclacorrecta` o `teclaincorrecta` a las teclas correspondientes cuando se pulsan las teclas en el teclado físico. El archivo CSS ahora tiene estilos específicos para indicar visualmente si una tecla ha sido presionada correctamente o incorrectamente en el teclado virtual, proporcionando una retroalimentación visual al usuario sobre su interacción con el teclado virtual.

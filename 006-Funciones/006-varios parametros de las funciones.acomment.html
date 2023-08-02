@@ -1,0 +1,40 @@
+La diferencia principal entre este código y el código anterior radica en que la función `saluda()` ahora tiene tres parámetros: `nombre`, `edad` y `opcion`. Veamos en detalle cómo afecta esto al funcionamiento del código:
+
+```html
+<!doctype html>
+<html lang="es">
+<head>
+    <title>Javascript</title>
+    <meta charset="utf-8">
+</head>
+<body>
+    <script>
+        function saluda(nombre, edad, opcion) {
+            if (opcion == 1) {
+                document.write("Hola, " + nombre + ", tienes " + edad + " años");
+            } else {
+                document.write("Hola, " + nombre + ", tienes " + edad + " años<br>");
+            }
+        }
+
+        saluda(); // 1
+        saluda("Jose Vicente"); // 2
+        saluda("Juan"); // 3
+        saluda("Juan", 45, 1); // 4
+        saluda("Jorge", 50); // 5
+    </script>
+</body>
+</html>
+```
+
+1. `saluda();`: En esta llamada a la función `saluda()`, no se pasa ningún argumento, lo que significa que todos los parámetros `nombre`, `edad` y `opcion` serán `undefined`. El resultado dependerá de la lógica dentro de la función. En este caso, se ejecutará la parte del código dentro del `else` del condicional, por lo que se mostrará "Hola, undefined, tienes undefined años".
+
+2. `saluda("Jose Vicente");`: En esta llamada, solo se proporciona el argumento `"Jose Vicente"` a la función, lo que significa que solo el parámetro `nombre` tomará ese valor y los otros dos parámetros, `edad` y `opcion`, serán `undefined`. La función mostrará "Hola, Jose Vicente, tienes undefined años".
+
+3. `saluda("Juan");`: Aquí, solo se proporciona el argumento `"Juan"`, al igual que antes, solo el parámetro `nombre` tomará ese valor y los otros dos serán `undefined`. La función mostrará "Hola, Juan, tienes undefined años".
+
+4. `saluda("Juan", 45, 1);`: En esta llamada, se proporcionan todos los tres argumentos a la función, `"Juan"` para `nombre`, `45` para `edad` y `1` para `opcion`. Dado que `opcion` es igual a `1`, se ejecutará la parte del código dentro del `if`, y se mostrará "Hola, Juan, tienes 45 años".
+
+5. `saluda("Jorge", 50);`: En esta llamada, se proporcionan dos argumentos a la función, `"Jorge"` para `nombre` y `50` para `edad`, pero no se proporciona el tercer argumento `opcion`. Como resultado, `opcion` será `undefined`, y nuevamente se ejecutará la parte del código dentro del `else`, mostrando "Hola, Jorge, tienes 50 años".
+
+En resumen, ahora la función `saluda()` es más flexible y puede recibir tres parámetros: `nombre`, `edad` y `opcion`. Dependiendo del valor de `opcion`, la función puede mostrar diferentes mensajes, lo que permite personalizar aún más los saludos según los argumentos proporcionados al llamar a la función. Si no se proporciona un argumento, el valor correspondiente del parámetro será `undefined`, y la función ajustará el mensaje en consecuencia.

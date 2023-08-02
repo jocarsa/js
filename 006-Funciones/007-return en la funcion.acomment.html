@@ -1,0 +1,36 @@
+En el código JavaScript proporcionado, la función `saluda(nombre, edad)` utiliza la declaración `return` para devolver un valor desde la función. Veamos en detalle cómo funciona el `return`:
+
+```html
+<!doctype html>
+<html lang="es">
+<head>
+    <title>Javascript</title>
+    <meta charset="utf-8">
+</head>
+<body>
+    <script>
+        function saluda(nombre, edad) {
+            return "Hola, " + nombre + ", tienes " + edad + " años<br>";
+        }
+
+        document.write(saluda()); // 1
+        console.log(saluda("Jose Vicente")); // 2
+        saluda("Juan"); // 3
+        saluda("Juan", 45); // 4
+        saluda("Jorge", 50); // 5
+    </script>
+</body>
+</html>
+```
+
+1. `document.write(saluda());`: Aquí, se llama a la función `saluda()` sin proporcionar ningún argumento. La función se ejecuta y devuelve el resultado de la concatenación de las cadenas "Hola, ", `nombre`, ", tienes ", `edad`, " años", pero dado que no se proporcionan `nombre` ni `edad`, ambos serán `undefined`. La función devuelve la cadena "Hola, undefined, tienes undefined años<br>", que luego se pasa a `document.write()` y se muestra en el documento HTML.
+
+2. `console.log(saluda("Jose Vicente"));`: En esta llamada, se proporciona el argumento `"Jose Vicente"` para `nombre`. La función se ejecuta y devuelve el resultado de la concatenación de las cadenas "Hola, ", `nombre`, ", tienes ", `edad`, " años". Como no se proporciona `edad`, será `undefined`, y la función devuelve la cadena "Hola, Jose Vicente, tienes undefined años". Esta cadena se pasa al `console.log()` y se muestra en la consola del navegador.
+
+3. `saluda("Juan");`: Aquí, solo se proporciona el argumento `"Juan"`, pero no se proporciona `edad`, por lo que `edad` será `undefined`. La función devuelve la cadena "Hola, Juan, tienes undefined años", pero esta cadena no se asigna o se muestra en ningún lugar.
+
+4. `saluda("Juan", 45);`: En esta llamada, se proporcionan ambos argumentos `"Juan"` y `45` para `nombre` y `edad`, respectivamente. La función devuelve la cadena "Hola, Juan, tienes 45 años", pero esta cadena no se asigna o se muestra en ningún lugar.
+
+5. `saluda("Jorge", 50);`: En esta llamada, se proporcionan ambos argumentos `"Jorge"` y `50` para `nombre` y `edad`, respectivamente. La función devuelve la cadena "Hola, Jorge, tienes 50 años", pero esta cadena no se asigna o se muestra en ningún lugar.
+
+En resumen, la declaración `return` se utiliza para devolver un valor específico desde una función. En el caso de la función `saluda(nombre, edad)`, se utiliza para devolver una cadena que representa un mensaje de saludo personalizado con el `nombre` y `edad` proporcionados como argumentos. El resultado de la función con `return` se puede almacenar en una variable, utilizarlo en otras operaciones o mostrarlo en el documento HTML o en la consola, según sea necesario.

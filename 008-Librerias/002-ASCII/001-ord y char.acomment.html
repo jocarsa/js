@@ -1,0 +1,32 @@
+En esta parte del código JavaScript, se utilizan las funciones `String.fromCharCode()` y `charCodeAt()` para trabajar con códigos de caracteres y obtener representaciones de caracteres en formato texto y numérico. Veamos en detalle cómo funciona:
+
+```html
+<!doctype html>
+<html lang="es">
+<head>
+    <title>Javascript</title>
+    <meta charset="utf-8">
+</head>
+<body>
+    <script>
+        codigotecla = 85; // Se asigna el número 85 a la variable codigotecla
+
+        document.write(String.fromCharCode(codigotecla)); // Se muestra en el documento el caracter correspondiente al código 85, que es la letra "U"
+
+        tecla = "U"; // Se asigna la letra "U" a la variable tecla
+
+        document.write(tecla.charCodeAt(0)); // Se muestra en el documento el código numérico del primer caracter de la variable tecla, que es 85 (el código ASCII de la letra "U")
+    </script>
+</body>
+</html>
+```
+
+1. `codigotecla = 85;`: En esta línea, se asigna el número `85` a la variable `codigotecla`. Este número representa el código ASCII del caracter que se desea obtener.
+
+2. `document.write(String.fromCharCode(codigotecla));`: La función `String.fromCharCode()` toma un número (código de caracter) como argumento y devuelve el caracter correspondiente en formato de texto. En este caso, se pasa el valor `85` como argumento, que corresponde al código ASCII de la letra "U". Por lo tanto, se imprimirá la letra "U" en el documento usando `document.write()`.
+
+3. `tecla = "U";`: En esta línea, se asigna la letra "U" a la variable `tecla`.
+
+4. `document.write(tecla.charCodeAt(0));`: La función `charCodeAt()` se utiliza en este caso para obtener el código numérico del primer caracter de la variable `tecla`. En JavaScript, los strings se comportan como arreglos de caracteres, y se puede acceder a cada caracter individual mediante el índice correspondiente (en este caso, `0` representa el primer caracter). La función `charCodeAt()` devuelve el código ASCII numérico del caracter especificado. Dado que el primer caracter de `tecla` es "U" (código 85 en ASCII), se imprimirá `85` en el documento usando `document.write()`.
+
+En resumen, en la parte JavaScript de este código, se utilizan las funciones `String.fromCharCode()` y `charCodeAt()` para obtener representaciones de caracteres en formato texto y numérico. Primero, se muestra en el documento la letra "U", cuyo código ASCII es `85`, y luego se muestra el código numérico `85`, que corresponde al primer caracter de la variable `tecla`, que también es la letra "U".

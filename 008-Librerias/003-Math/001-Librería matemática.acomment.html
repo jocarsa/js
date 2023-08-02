@@ -1,0 +1,56 @@
+En esta parte del código JavaScript, se utilizan diversas funciones y constantes proporcionadas por el objeto global `Math`. Estas funciones permiten realizar operaciones matemáticas y obtener resultados como números redondeados, números aleatorios, funciones trigonométricas, etc. Veamos en detalle cómo funciona:
+
+```html
+<!doctype html>
+<html lang="es">
+<head>
+    <title>Javascript</title>
+    <meta charset="utf-8">
+</head>
+<body>
+    <script>
+        var nota = 4.2; // Se asigna el valor 4.2 a la variable nota
+
+        document.write(Math.round(nota) + "<br>"); // Se muestra en el documento el valor redondeado de nota usando Math.round(), que será 4
+
+        document.write(Math.floor(nota) + "<br>"); // Se muestra en el documento el valor entero más cercano menor o igual a nota usando Math.floor(), que será 4
+
+        document.write(Math.ceil(nota) + "<br>"); // Se muestra en el documento el valor entero más cercano mayor o igual a nota usando Math.ceil(), que será 5
+
+        var aleatorio = Math.random(); // Se obtiene un número aleatorio entre 0 (inclusive) y 1 (exclusive) usando Math.random()
+
+        document.write("el aleatorio es: " + aleatorio + "<br>"); // Se muestra en el documento el valor aleatorio obtenido
+
+        var angulo = 0; // Se asigna el valor 0 a la variable angulo
+
+        document.write("el seno es: " + Math.sin(angulo) + "<br>"); // Se muestra en el documento el valor del seno de angulo usando Math.sin(), que será 0
+
+        document.write("el coseno es: " + Math.cos(angulo) + "<br>"); // Se muestra en el documento el valor del coseno de angulo usando Math.cos(), que también será 0
+
+        const PI = Math.PI; // Se asigna el valor de la constante pi (π) a la variable PI
+
+        document.write("el seno de PI es: " + Math.sin(Math.PI) + "<br>"); // Se muestra en el documento el valor del seno de PI usando Math.sin(), que será aproximadamente 0 debido a la precisión finita del número π
+    </script>
+</body>
+</html>
+```
+
+1. `Math.round(nota)`: La función `Math.round()` se utiliza para redondear un número al entero más cercano. En este caso, se aplica a la variable `nota`, cuyo valor es `4.2`. Al usar `Math.round(nota)`, se redondea `4.2` al entero más cercano, que es `4`, y se muestra en el documento.
+
+2. `Math.floor(nota)`: La función `Math.floor()` se utiliza para obtener el entero más cercano que sea menor o igual a un número. En este caso, se aplica a la variable `nota`, cuyo valor es `4.2`. Al usar `Math.floor(nota)`, se obtiene el entero más cercano menor o igual a `4.2`, que es `4`, y se muestra en el documento.
+
+3. `Math.ceil(nota)`: La función `Math.ceil()` se utiliza para obtener el entero más cercano que sea mayor o igual a un número. En este caso, se aplica a la variable `nota`, cuyo valor es `4.2`. Al usar `Math.ceil(nota)`, se obtiene el entero más cercano mayor o igual a `4.2`, que es `5`, y se muestra en el documento.
+
+4. `Math.random()`: La función `Math.random()` se utiliza para obtener un número decimal aleatorio entre `0` (inclusive) y `1` (exclusive). Al almacenar el valor aleatorio en la variable `aleatorio`, se mostrará en el documento el número generado en cada ejecución del script.
+
+5. `Math.sin(angulo)`: La función `Math.sin()` se utiliza para obtener el valor del seno de un ángulo (expresado en radianes). En este caso, el ángulo es `0`, y como el seno de `0` es `0`, se mostrará `"el seno es: 0"` en el documento.
+
+6. `Math.cos(angulo)`: La función `Math.cos()` se utiliza para obtener el valor del coseno de un ángulo (expresado en radianes). En este caso, el ángulo es `0`, y como el coseno de `0` también es `0`, se mostrará `"el coseno es: 0"` en el documento.
+
+7. `Math.PI`: La constante `Math.PI` representa el valor numérico de π (pi), que es una constante matemática aproximadamente igual a `3.141592653589793`. Al almacenar el valor de π en la constante `PI`, se puede utilizar para realizar cálculos trigonométricos.
+
+8. `Math.sin(Math.PI)`: Aquí se muestra en el documento el valor del seno de π (pi) usando `Math.sin(Math.PI
+
+)`. Dado que el seno de π es `0`, se mostrará `"el seno de PI es: 0"` en el documento.
+
+En resumen, en la parte JavaScript de este código, se utilizan varias funciones del objeto global `Math` para realizar operaciones matemáticas como redondear números, obtener números aleatorios y calcular funciones trigonométricas (seno y coseno). Además, se utiliza la constante `Math.PI` para obtener el valor de π (pi). Los resultados de estas operaciones y funciones se muestran en el documento usando `document.write()`.

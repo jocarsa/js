@@ -1,0 +1,11 @@
+En el archivo CSS anterior, se han realizado los siguientes cambios:
+
+1. Se ha agregado una nueva regla para el selector `#fila3`:
+   ```
+   #fila3{
+       padding-left:40px;
+   }
+   ```
+   Esta regla define el estilo para el elemento con `id="fila3"`, que corresponde a la tercera fila de teclas en el teclado virtual. La regla `padding-left: 40px;` agrega un relleno de 40 píxeles en el lado izquierdo de la tercera fila de teclas. Esto crea un espacio adicional entre el borde izquierdo del contenedor "teclado" y el primer elemento de la tercera fila de teclas.
+
+Con estos cambios, el archivo CSS ha añadido una nueva regla para el `id="fila3"` que agrega más espacio de relleno en la tercera fila de teclas. Cada fila de teclas tendrá un espacio de relleno diferente en el lado izquierdo debido a las reglas para `#fila2` y `#fila3`. Esto afectará el diseño y la alineación horizontal del teclado virtual en el documento HTML anterior.

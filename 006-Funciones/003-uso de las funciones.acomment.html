@@ -1,0 +1,35 @@
+En este código HTML, la parte JavaScript está dentro de la etiqueta `<script>` ubicada en el cuerpo del documento HTML. Veamos en detalle:
+
+```html
+<!doctype html>
+<html lang="es">
+<head>
+    <title>Javascript</title>
+    <meta charset="utf-8">
+</head>
+<body>
+    <script>
+        function saluda(){
+            document.write("Hola, Jose Vicente");
+        }
+        saluda();
+    </script>
+</body>
+</html>
+```
+
+1. `<script>`: La etiqueta `<script>` se utiliza para incorporar código JavaScript dentro de un documento HTML. En este caso, se encuentra en el cuerpo del documento, lo que significa que el script se ejecutará después de que se haya cargado el contenido HTML.
+
+2. `function saluda() { ... }`: Aquí se define la función `saluda()`, que es una función simple sin parámetros. El cuerpo de la función utiliza `document.write()` para escribir "Hola, Jose Vicente" en el documento HTML.
+
+3. `saluda();`: Después de definir la función `saluda()`, esta línea de código invoca (llama) a la función. Al llamar a `saluda()`, se ejecuta el código dentro de la función, que utiliza `document.write()` para agregar "Hola, Jose Vicente" al contenido del documento HTML.
+
+Cuando el navegador carga la página, primero procesará el HTML, y cuando llegue a la etiqueta `<script>`, ejecutará el código JavaScript que contiene. En este caso, la función `saluda()` se llama inmediatamente después de ser definida, lo que hace que se muestre el mensaje "Hola, Jose Vicente" en el documento.
+
+Al cargar la página en el navegador, el resultado que verías sería simplemente:
+
+```
+Hola, Jose Vicente
+```
+
+La función `saluda()` se llama automáticamente al cargar la página, por lo que el mensaje se muestra en el documento sin necesidad de ninguna interacción adicional del usuario.

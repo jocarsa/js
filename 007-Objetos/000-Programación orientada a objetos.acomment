@@ -1,0 +1,21 @@
+La programación orientada a objetos (POO) es un paradigma de programación que se basa en el concepto de "objetos" y su interacción para resolver problemas y modelar sistemas. Es uno de los enfoques más utilizados y poderosos en el desarrollo de software debido a su capacidad para organizar y estructurar el código de manera más eficiente y comprensible.
+
+En la POO, los objetos son instancias de "clases". Las clases son plantillas o modelos que definen las características y comportamientos que tendrán los objetos creados a partir de ellas. Cada objeto contiene datos (atributos) y funciones (métodos) que operan sobre esos datos. Esto se conoce como "encapsulamiento", ya que los detalles internos del objeto están ocultos al exterior, y solo los métodos proporcionados por la clase permiten interactuar con él.
+
+Los principales conceptos de la programación orientada a objetos son:
+
+1. **Clases:** Son las plantillas que definen la estructura y comportamiento de los objetos. Una clase especifica qué datos y métodos tendrán los objetos creados a partir de ella.
+
+2. **Objetos:** Son las instancias concretas de una clase. Cada objeto tiene sus propios valores para los atributos y puede ejecutar sus propios métodos.
+
+3. **Atributos:** Son las características o propiedades de un objeto. Representan los datos que el objeto contiene y definen su estado.
+
+4. **Métodos:** Son las funciones asociadas a una clase que permiten realizar operaciones específicas sobre los atributos del objeto.
+
+5. **Herencia:** Es un mecanismo mediante el cual una clase puede heredar atributos y métodos de otra clase superior, llamada clase padre o superclase. La herencia permite la reutilización de código y la creación de jerarquías de clases.
+
+6. **Polimorfismo:** Es la capacidad de una clase para tomar diferentes formas o comportamientos. En POO, el polimorfismo permite que diferentes clases implementen métodos con el mismo nombre, pero con comportamientos específicos para cada clase.
+
+7. **Encapsulamiento:** Es el concepto de ocultar los detalles internos de un objeto y permitir el acceso controlado a sus atributos y métodos. Esto evita que el código externo modifique directamente los atributos internos y promueve la cohesión y modularidad en el diseño del software.
+
+La programación orientada a objetos permite modelar el mundo real de manera más natural y efectiva en el código. Es especialmente útil para proyectos grandes y complejos, ya que facilita la organización del código y mejora su mantenibilidad y extensibilidad. Lenguajes populares como Java, C++, Python y C# están basados en el paradigma de la POO, y muchos otros lenguajes admiten elementos de POO.

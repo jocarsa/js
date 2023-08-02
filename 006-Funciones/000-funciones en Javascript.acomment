@@ -1,0 +1,53 @@
+En JavaScript, las funciones son bloques de código que se pueden definir y reutilizar para realizar tareas específicas. Son una parte fundamental del lenguaje y se utilizan para dividir la lógica en unidades más pequeñas y manejables, lo que facilita la escritura, el mantenimiento y la reutilización del código. Las funciones pueden tener parámetros y devolver valores, lo que las hace extremadamente flexibles y poderosas.
+
+Aquí está la sintaxis básica para definir una función en JavaScript:
+
+```javascript
+function nombreFuncion(parametro1, parametro2, ...) {
+  // Cuerpo de la función: código que realiza una tarea específica
+  // Puede incluir declaraciones de variables, estructuras de control (if, for, etc.), operaciones, etc.
+  return resultado; // Opcional: Si la función devuelve un valor, se utiliza la instrucción 'return'
+}
+```
+
+- `function`: Es la palabra clave que indica que estamos definiendo una función.
+- `nombreFuncion`: Es el nombre que le damos a la función, debe seguir las reglas de nomenclatura de JavaScript y ser descriptivo del propósito de la función.
+- `parametro1`, `parametro2`, ...: Son los parámetros (argumentos) que puede recibir la función. Son valores que se pasan a la función cuando se llama y pueden ser utilizados dentro del cuerpo de la función.
+- `return`: Es la palabra clave que se utiliza para especificar el valor que la función devuelve. Si una función no tiene una declaración de retorno, por defecto devuelve `undefined`.
+
+Ejemplo de una función simple que suma dos números:
+
+```javascript
+function sumar(a, b) {
+  return a + b;
+}
+
+// Llamada a la función:
+const resultado = sumar(5, 3); // resultado será igual a 8
+```
+
+Las funciones en JavaScript también pueden ser asignadas a variables (funciones anónimas) o pueden ser pasadas como argumentos a otras funciones (funciones de orden superior).
+
+Función asignada a variable:
+
+```javascript
+const resta = function(a, b) {
+  return a - b;
+};
+
+const resultadoResta = resta(10, 5); // resultadoResta será igual a 5
+```
+
+Función de orden superior (pasando una función como argumento):
+
+```javascript
+function operar(a, b, funcionOperacion) {
+  return funcionOperacion(a, b);
+}
+
+const resultadoOperacion = operar(6, 2, sumar); // resultadoOperacion será igual a 8
+```
+
+Las funciones también pueden ser declaradas dentro de otras funciones (funciones anidadas) y acceder a las variables de la función exterior. Esto se conoce como cierre (closures) y permite crear funciones con un estado interno que persiste a través de múltiples llamadas.
+
+En resumen, las funciones en JavaScript son bloques de código reutilizables que nos permiten dividir tareas en unidades más pequeñas, facilitando la organización y mantenimiento del código. Son esenciales para aplicar conceptos de programación como modularidad, reutilización de código y legibilidad.

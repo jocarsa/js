@@ -1,0 +1,43 @@
+Los eventos en JavaScript son acciones que ocurren en un elemento HTML o en el contexto del navegador, como la pulsación de una tecla, el clic de un botón del mouse, el envío de un formulario, entre otros. Estos eventos permiten que los desarrolladores respondan y realicen acciones específicas cuando los usuarios interactúan con una página web.
+
+Los eventos se desencadenan cuando ocurre una acción específica y se pueden capturar y manejar mediante funciones JavaScript. Para trabajar con eventos en JavaScript, se utilizan los siguientes pasos:
+
+1. **Seleccionar el elemento objetivo:** Se debe seleccionar el elemento HTML al que se le desea agregar el evento. Esto se puede hacer utilizando el método `document.getElementById()`, `document.querySelector()`, u otros métodos para seleccionar elementos del DOM.
+
+2. **Asociar el evento:** Una vez que se ha seleccionado el elemento, se debe asociar el evento deseado a ese elemento. Esto se realiza mediante el método `addEventListener()`. Por ejemplo, para asociar el evento de clic (`click`) a un botón con el `id="miBoton"`, se haría lo siguiente:
+
+```javascript
+const miBoton = document.getElementById('miBoton');
+miBoton.addEventListener('click', function() {
+  // Aquí se coloca el código que se ejecutará cuando ocurra el evento de clic
+});
+```
+
+3. **Definir la función de manejo del evento:** La función proporcionada al método `addEventListener()` es la que se ejecutará cuando ocurra el evento asociado. Esta función se denomina "manejador de eventos". Puedes definir la función directamente como en el ejemplo anterior o utilizar una función ya existente.
+
+4. **Realizar acciones:** Dentro del manejador de eventos, se puede realizar cualquier acción deseada, como modificar contenido, cambiar estilos, enviar formularios, etc.
+
+Ejemplo con un botón que muestra un mensaje al hacer clic:
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Eventos en JavaScript</title>
+</head>
+<body>
+  <button id="miBoton">Haz clic</button>
+
+  <script>
+    const miBoton = document.getElementById('miBoton');
+    miBoton.addEventListener('click', function() {
+      alert('¡Has hecho clic en el botón!');
+    });
+  </script>
+</body>
+</html>
+```
+
+Hay muchos tipos de eventos disponibles en JavaScript, como eventos de mouse (clic, movimiento, desplazamiento), eventos de teclado (pulsaciones de teclas), eventos de formulario (envío, cambio de valor), eventos de carga de página, eventos de temporizador, etc. Cada tipo de evento tiene su propio nombre y propiedades asociadas.
+
+En resumen, los eventos en JavaScript permiten interactuar con los usuarios y responder a sus acciones en una página web, lo que brinda una experiencia interactiva y dinámica.

@@ -1,0 +1,48 @@
+El evento "mousewheel" en JavaScript se dispara cuando el usuario utiliza la rueda del mouse o el trackpad para hacer scroll (desplazamiento) sobre un elemento HTML que tiene contenido desplazable, como un área de texto, un div con desbordamiento, una tabla, entre otros. Este evento permite detectar los movimientos de la rueda del mouse o trackpad y responder a ellos para realizar acciones específicas.
+
+El evento "mousewheel" no es estándar y puede comportarse de manera diferente en diferentes navegadores. Para abordar este problema y asegurar una mayor compatibilidad entre navegadores, también se puede usar el evento "wheel", que es una versión más estandarizada y ampliamente admitida.
+
+Para utilizar el evento "mousewheel" o "wheel" en JavaScript, se sigue el siguiente proceso:
+
+1. **Seleccionar el elemento:** Selecciona el elemento HTML sobre el que deseas capturar el evento "mousewheel" o "wheel". Puedes utilizar los métodos de selección del DOM, como `document.getElementById()`, `document.querySelector()`, u otros métodos de selección, para obtener el elemento deseado.
+
+2. **Agregar el manejador de eventos:** Utiliza el método `addEventListener()` para agregar el manejador de eventos "mousewheel" o "wheel". Este método espera dos argumentos: el nombre del evento, en este caso, "mousewheel" o "wheel", y la función que se ejecutará cuando ocurra el evento. La función que se proporciona es el manejador del evento, y se ejecutará cada vez que el usuario haga scroll con la rueda del mouse o el trackpad sobre el elemento seleccionado.
+
+3. **Definir el manejador de eventos:** La función del manejador de eventos es una función JavaScript que define las acciones que se realizarán cuando ocurra el evento "mousewheel" o "wheel". Puede contener cualquier código válido de JavaScript que realice acciones específicas en respuesta a los movimientos de la rueda del mouse o trackpad.
+
+Aquí hay un ejemplo práctico que muestra cómo utilizar el evento "wheel" en un div con desbordamiento para mostrar un mensaje cuando el usuario haga scroll con la rueda del mouse:
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Evento "wheel" en JavaScript</title>
+  <style>
+    #miDiv {
+      width: 200px;
+      height: 100px;
+      overflow: auto;
+      border: 1px solid black;
+    }
+  </style>
+</head>
+<body>
+  <div id="miDiv">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac volutpat purus.</p>
+  </div>
+
+  <script>
+    // Paso 1: Seleccionar el elemento div con desbordamiento
+    const miDiv = document.getElementById('miDiv');
+
+    // Paso 2: Agregar el manejador de eventos "wheel"
+    miDiv.addEventListener('wheel', function(event) {
+      // Paso 3: Definir el manejador de eventos
+      alert('Has hecho scroll con la rueda del mouse');
+    });
+  </script>
+</body>
+</html>
+```
+
+En este ejemplo, cuando el usuario hace scroll con la rueda del mouse sobre el div con desbordamiento, se muestra un cuadro de alerta que muestra el mensaje "Has hecho scroll con la rueda del mouse". De esta manera, el evento "wheel" permite realizar acciones específicas en respuesta a los movimientos de la rueda del mouse o trackpad sobre un elemento desplazable.

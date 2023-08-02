@@ -1,0 +1,44 @@
+En este código HTML, la parte JavaScript se encuentra dentro de la etiqueta `<script>` ubicada en el cuerpo del documento HTML. Aquí, se definen dos funciones: `saluda()` y `saluda2()`, y ambas son invocadas para mostrar mensajes diferentes en el documento HTML. Veamos en detalle:
+
+```html
+<!doctype html>
+<html lang="es">
+<head>
+    <title>Javascript</title>
+    <meta charset="utf-8">
+</head>
+<body>
+    <script>
+        function saluda() {
+            document.write("Hola, Jose Vicente");
+        }
+
+        function saluda2() {
+            document.write("Hola, Juan");
+        }
+
+        saluda();
+        saluda2();
+    </script>
+</body>
+</html>
+```
+
+1. `<script>`: La etiqueta `<script>` se utiliza para incorporar código JavaScript dentro de un documento HTML. En este caso, se encuentra en el cuerpo del documento, lo que significa que el script se ejecutará después de que se haya cargado el contenido HTML.
+
+2. `function saluda() { ... }`: Se define la función `saluda()`. Esta función muestra el mensaje "Hola, Jose Vicente" utilizando `document.write()`.
+
+3. `function saluda2() { ... }`: Se define la función `saluda2()`. Esta función muestra el mensaje "Hola, Juan" utilizando `document.write()`.
+
+4. `saluda();`: Se llama a la función `saluda()`. Al cargar la página, esta función se ejecutará y mostrará el mensaje "Hola, Jose Vicente" en el documento.
+
+5. `saluda2();`: Se llama a la función `saluda2()`. Después de que la función `saluda()` haya mostrado su mensaje, esta función se ejecutará y mostrará el mensaje "Hola, Juan" en el documento.
+
+Cuando el navegador carga la página, primero procesará el HTML y ejecutará el código JavaScript dentro de la etiqueta `<script>`. Como resultado, verás en el documento:
+
+```
+Hola, Jose Vicente
+Hola, Juan
+```
+
+Ambas funciones se llaman automáticamente al cargar la página, por lo que ambos mensajes se muestran en el documento sin necesidad de ninguna interacción adicional del usuario. Cada función `saluda()` y `saluda2()` realiza una tarea diferente y muestra un mensaje diferente en el documento HTML.

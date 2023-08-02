@@ -1,0 +1,49 @@
+En JavaScript, la selección por clase es una forma de acceder a múltiples elementos HTML que comparten una misma clase CSS. Los elementos HTML pueden tener uno o más nombres de clases y varios elementos pueden tener la misma clase.
+
+Para seleccionar elementos por clase en JavaScript, puedes utilizar el método `getElementsByClassName()` del objeto `document`. Este método busca y devuelve una colección (objeto NodeList) de todos los elementos que tienen la clase especificada.
+
+El proceso para seleccionar elementos por clase en JavaScript es el siguiente:
+
+1. **Identificar los elementos HTML con la clase:** En el documento HTML, agrega la clase CSS a los elementos que desees seleccionar. Puedes aplicar la misma clase a varios elementos para agruparlos.
+
+2. **Seleccionar los elementos en JavaScript:** Utiliza el método `getElementsByClassName()` del objeto `document` para acceder a los elementos que tienen la clase específica. Pasa el nombre de la clase como argumento al método.
+
+3. **Trabajar con la colección de elementos:** La función `getElementsByClassName()` devuelve una colección (NodeList) de elementos que tienen la clase especificada. Puedes iterar sobre esta colección o acceder a elementos específicos dentro de ella.
+
+Aquí hay un ejemplo práctico que muestra cómo seleccionar elementos por clase en JavaScript:
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Selección por Clase en JavaScript</title>
+  <style>
+    .resaltado {
+      color: red;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <p class="resaltado">Este es un párrafo resaltado.</p>
+  <p>Este es otro párrafo.</p>
+  <p class="resaltado">Este es otro párrafo resaltado.</p>
+
+  <script>
+    // Paso 1: Identificar los elementos HTML con la clase "resaltado"
+
+    // Paso 2: Seleccionar los elementos en JavaScript
+    const elementosResaltados = document.getElementsByClassName('resaltado');
+
+    // Paso 3: Trabajar con la colección de elementos
+    for (let i = 0; i < elementosResaltados.length; i++) {
+      elementosResaltados[i].textContent = '¡Texto cambiado!';
+    }
+  </script>
+</body>
+</html>
+```
+
+En este ejemplo, seleccionamos los elementos que tienen la clase "resaltado" utilizando `getElementsByClassName()`. Luego, almacenamos la colección de elementos en la variable `elementosResaltados`. Finalmente, utilizamos un bucle `for` para recorrer todos los elementos con la clase "resaltado" y cambiamos su contenido de texto a "¡Texto cambiado!".
+
+La selección por clase en JavaScript es una forma útil de trabajar con grupos de elementos que comparten una misma apariencia o comportamiento y permite manipularlos de manera conjunta. Además, al seleccionar por clase, puedes aplicar cambios a múltiples elementos con una sola selección.

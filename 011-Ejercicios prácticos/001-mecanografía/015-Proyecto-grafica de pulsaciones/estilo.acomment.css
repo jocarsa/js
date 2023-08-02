@@ -1,0 +1,7 @@
+En el archivo CSS anterior se han realizado los siguientes cambios:
+
+1. Se ha agregado un nuevo estilo para el elemento con el atributo `id="contienelienzo"`. Se le ha dado un ancho de 720 píxeles, centrado horizontalmente con `margin:auto`, un margen superior de 20 píxeles y un fondo blanco.
+
+2. Se ha agregado un nuevo estilo para los elementos `<canvas>`. Se les ha dado un fondo blanco y se ha utilizado el estilo `display:flex` con `justify-content: center` para centrar el lienzo horizontalmente dentro del contenedor con `id="contienelienzo"`.
+
+Estos cambios tienen como objetivo establecer el lienzo (`<canvas>`) como un elemento centrado horizontalmente y asegurarse de que el fondo sea blanco para que se mezcle con el resto del diseño de la página. Además, el lienzo estará contenido dentro del div con `id="contienelienzo"` que tiene un fondo blanco y está centrado en la página. De esta manera, se crea una estructura visual ordenada para el lienzo y se mantiene la coherencia con el diseño general de la página.

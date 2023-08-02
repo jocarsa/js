@@ -1,0 +1,43 @@
+En JavaScript, la selección por ID es una forma de acceder a un elemento HTML específico en el DOM (Document Object Model) utilizando su atributo "id". Cada elemento HTML puede tener un atributo "id" único que lo identifica de manera única en el documento.
+
+Para seleccionar un elemento por ID en JavaScript, puedes utilizar el método `getElementById()` del objeto `document`. Este método busca un elemento en el documento con el ID especificado y devuelve una referencia a ese elemento.
+
+El proceso para seleccionar un elemento por ID en JavaScript es el siguiente:
+
+1. **Identificar el elemento HTML:** En el documento HTML, agrega el atributo "id" a uno o varios elementos que desees seleccionar. Asegúrate de que los valores de "id" sean únicos en el documento.
+
+2. **Seleccionar el elemento en JavaScript:** Utiliza el método `getElementById()` del objeto `document` para acceder al elemento con el ID específico. Pasa el valor del ID como argumento al método.
+
+3. **Almacenar el elemento en una variable:** Para trabajar con el elemento seleccionado, es común almacenarlo en una variable. De esta manera, puedes acceder a sus propiedades y métodos más fácilmente.
+
+Aquí hay un ejemplo práctico que muestra cómo seleccionar un elemento por ID en JavaScript:
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Selección por ID en JavaScript</title>
+</head>
+<body>
+  <h1 id="titulo">¡Hola, mundo!</h1>
+  <p id="parrafo">Este es un párrafo de ejemplo.</p>
+
+  <script>
+    // Paso 1: Identificar los elementos HTML con atributos "id"
+    // En este caso, hemos asignado "titulo" y "parrafo" como IDs únicos
+
+    // Paso 2: Seleccionar los elementos en JavaScript
+    const tituloElemento = document.getElementById('titulo');
+    const parrafoElemento = document.getElementById('parrafo');
+
+    // Paso 3: Trabajar con los elementos seleccionados
+    tituloElemento.style.color = 'blue'; // Cambiar el color del título a azul
+    parrafoElemento.style.fontSize = '18px'; // Cambiar el tamaño de fuente del párrafo
+  </script>
+</body>
+</html>
+```
+
+En este ejemplo, seleccionamos el elemento con el ID "titulo" y el elemento con el ID "parrafo" utilizando `getElementById()`. Luego, almacenamos las referencias a estos elementos en las variables `tituloElemento` y `parrafoElemento`, respectivamente. Después, utilizamos estas variables para modificar el estilo de los elementos seleccionados, cambiando el color del título a azul y el tamaño de fuente del párrafo a 18px.
+
+La selección por ID en JavaScript es una forma común de interactuar con elementos específicos en el DOM y permite acceder y manipular contenido y estilos de manera más eficiente.

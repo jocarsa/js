@@ -1,0 +1,19 @@
+En el archivo CSS anterior, se han realizado los siguientes cambios:
+
+1. Se ha agregado una nueva regla para el selector `.clearfix`:
+   ```
+   .clearfix{
+       clear:both;
+   }
+   ```
+   Esta regla define el estilo para la clase "clearfix". El `clear: both;` se utiliza para limpiar los elementos flotantes tanto a la izquierda como a la derecha. En este caso, asegura que el contenedor "teclado" se expanda correctamente y se ajuste a la altura de las teclas flotantes en ambas filas.
+
+2. Se ha agregado una nueva regla para el selector `#fila2`:
+   ```
+   #fila2{
+       padding-left:20px;
+   }
+   ```
+   Esta regla define el estilo para el elemento con el `id="fila2"`, que corresponde a la segunda fila de teclas en el teclado virtual. La regla `padding-left: 20px;` agrega un relleno de 20 píxeles en el lado izquierdo de la fila de teclas. Esto crea un espacio adicional entre el borde izquierdo del contenedor "teclado" y el primer elemento de la segunda fila de teclas.
+
+Con estos cambios, el archivo CSS ha añadido nuevas reglas para la clase "clearfix" y el `id="fila2"`. La clase "clearfix" asegura un correcto ajuste de altura para el contenedor "teclado", mientras que la regla para el `id="fila2"` agrega un espacio de relleno en el lado izquierdo de la segunda fila de teclas. El diseño y el aspecto visual del teclado virtual se ven afectados por estas reglas adicionales en conjunto con las reglas anteriores que definen el estilo de las teclas individuales y el contenedor "teclado".

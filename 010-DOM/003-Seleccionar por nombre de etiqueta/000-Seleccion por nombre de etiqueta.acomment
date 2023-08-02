@@ -1,0 +1,49 @@
+En JavaScript, la selección por nombre de etiqueta es una forma de acceder a todos los elementos HTML que coinciden con un tipo de etiqueta específico, como "div", "p", "img", "ul", entre otros. Esta forma de selección devuelve una colección (objeto NodeList) de todos los elementos que tienen la etiqueta especificada.
+
+Para seleccionar elementos por nombre de etiqueta en JavaScript, puedes utilizar el método `getElementsByTagName()` del objeto `document`. Este método busca y devuelve una colección de elementos que tienen el nombre de etiqueta especificado.
+
+El proceso para seleccionar elementos por nombre de etiqueta en JavaScript es el siguiente:
+
+1. **Identificar los elementos HTML con el nombre de etiqueta:** En el documento HTML, agrega elementos con la etiqueta específica que desees seleccionar, por ejemplo, varios elementos `<div>`, varios elementos `<p>`, etc.
+
+2. **Seleccionar los elementos en JavaScript:** Utiliza el método `getElementsByTagName()` del objeto `document` para acceder a todos los elementos que tienen el nombre de etiqueta específico. Pasa el nombre de etiqueta como argumento al método.
+
+3. **Trabajar con la colección de elementos:** El método `getElementsByTagName()` devuelve una colección (NodeList) de elementos que coinciden con el nombre de etiqueta especificado. Puedes iterar sobre esta colección o acceder a elementos específicos dentro de ella.
+
+Aquí hay un ejemplo práctico que muestra cómo seleccionar elementos por nombre de etiqueta en JavaScript:
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Selección por Nombre de Etiqueta en JavaScript</title>
+</head>
+<body>
+  <div>Elemento div 1</div>
+  <div>Elemento div 2</div>
+  <p>Este es un párrafo.</p>
+  <p>Este es otro párrafo.</p>
+
+  <script>
+    // Paso 1: Identificar los elementos HTML con el nombre de etiqueta
+
+    // Paso 2: Seleccionar los elementos en JavaScript
+    const elementosDiv = document.getElementsByTagName('div');
+    const elementosParrafo = document.getElementsByTagName('p');
+
+    // Paso 3: Trabajar con la colección de elementos
+    for (let i = 0; i < elementosDiv.length; i++) {
+      elementosDiv[i].style.color = 'blue'; // Cambiar el color de fondo de los elementos div
+    }
+
+    for (let i = 0; i < elementosParrafo.length; i++) {
+      elementosParrafo[i].style.fontSize = '18px'; // Cambiar el tamaño de fuente de los párrafos
+    }
+  </script>
+</body>
+</html>
+```
+
+En este ejemplo, seleccionamos todos los elementos `<div>` utilizando `getElementsByTagName()` y almacenamos la colección de elementos en la variable `elementosDiv`. Luego, seleccionamos todos los elementos `<p>` y almacenamos la colección en la variable `elementosParrafo`. Finalmente, utilizamos bucles `for` para recorrer las colecciones de elementos y aplicamos cambios de estilo a cada grupo de elementos.
+
+La selección por nombre de etiqueta en JavaScript es útil cuando deseas trabajar con varios elementos del mismo tipo y aplicar cambios o acciones en ellos de manera conjunta. Permite acceder a todos los elementos de una etiqueta específica y realizar operaciones en un solo paso.

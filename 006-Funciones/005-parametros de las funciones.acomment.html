@@ -1,0 +1,32 @@
+La diferencia principal entre este código y el código anterior radica en que la función `saluda()` ahora tiene un parámetro llamado `nombre`. Veamos en detalle cómo afecta esto al funcionamiento del código:
+
+```html
+<!doctype html>
+<html lang="es">
+<head>
+    <title>Javascript</title>
+    <meta charset="utf-8">
+</head>
+<body>
+    <script>
+        function saluda(nombre) {
+            document.write("Hola, " + nombre);
+        }
+
+        saluda(); // 1
+        saluda("Jose Vicente"); // 2
+        saluda("Juan"); // 3
+    </script>
+</body>
+</html>
+```
+
+1. `saluda();`: En esta llamada a la función `saluda()`, no se pasa ningún argumento. Como resultado, el parámetro `nombre` dentro de la función será `undefined`. Por lo tanto, el mensaje mostrado será "Hola, undefined".
+
+2. `saluda("Jose Vicente");`: En esta llamada, se pasa el argumento `"Jose Vicente"` a la función `saluda()`. El parámetro `nombre` dentro de la función ahora tendrá el valor `"Jose Vicente"`, por lo que el mensaje mostrado será "Hola, Jose Vicente".
+
+3. `saluda("Juan");`: En esta llamada, se pasa el argumento `"Juan"` a la función `saluda()`. El parámetro `nombre` dentro de la función ahora tendrá el valor `"Juan"`, por lo que el mensaje mostrado será "Hola, Juan".
+
+En resumen, al agregar el parámetro `nombre` a la función `saluda()`, podemos personalizar el mensaje que se muestra según el valor del argumento pasado a la función. Si se llama a la función sin argumentos, se utiliza un valor predeterminado `undefined`, pero si se proporciona un argumento, se utilizará ese valor para mostrar el saludo con el nombre específico.
+
+En comparación con el código anterior, este es más versátil y flexible, ya que podemos utilizar la misma función para mostrar diferentes saludos para diferentes nombres simplemente proporcionando un argumento diferente cada vez que llamamos a la función.
